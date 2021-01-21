@@ -1,5 +1,5 @@
 {
-  "name": "Block HTML-CSS advanced",
+  "name": "gulp-elementary",
   "version": "1.0.0",
   "description": "Simple gulp application",
   "main": "gulpfile.js",
