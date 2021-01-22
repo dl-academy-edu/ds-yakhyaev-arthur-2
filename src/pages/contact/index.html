@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/src/static/images/favicon.ico" />
+    <title>Contact</title>
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main>
+      <section class="contact">
+        <div class="container">
+            <h1 class="contact__title">Contact Us</h1>
+            <div class="contact__select">
+                <a class="link" href="/" title="Go to Home">Home</a>
+                <img class="contact__arrow" src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
+                <a class="contact-link" href="#">Contact Us</a>
+            </div>
+            <div class="contact__wrapper">
+            <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="contact__name">
+                    <label class="contact__item-name" for="name-input">Name</label>
+                    <input class="contact__line-name" id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
+                    
+                <div class="contact__line-item">
+                    <div class="contact__phone">
+                        <label class="contact__item-phone" for="phone-input">Phone</label>
+                        <input class="contact__line-phone" id="phone-input" type="text"></div>
+                    <div class="contact__email">
+                        <label class="contact__item-email" for="contact-email">Email</label>
+                        <input class="contact__line-email" id="contact-email" type="email"></div>
+                </div>
+                
+                <div class="contact__message">
+                    <label class="contact__item-message" for="textarea">Message</label>
+                    <textarea class="contact__line-text" id="textarea">  </textarea>
+                </div>
+                <div class="contact__consent">
+                    <input  id="check-consent" type="checkbox" class="contact__checkbox-input" checked>
+                    <label class="contact__consent-text"  for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
+                </div>
+                <button class="contact__button" type="submit">Submit</button>
+            </form>
+            
+            <div class="contact__descript">
+                <p class="contact__text"> Our support team are on-hand to assist with any issues you are experiencing. </p>
+                <p class="contact__text"> Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
+                <p class="contact__subtext"> An expert is waiting to help you! </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    </main>
+    @@include('footer/index.html')
+    <script src="index.js"></script>
+  </body>
+</html>
