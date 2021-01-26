@@ -3,8 +3,7 @@
 
 .blog {
     margin-bottom: 60px;
-}
-.blog__title {
+    &__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -14,16 +13,16 @@
     margin-left: 2px;
     text-transform: uppercase;
 }
-.blog__select {
+    &__select {
     margin-bottom: 50px;
     margin-left: 1px;
     margin-top: -1px;
 }
-.blog__arrow {
+    &__arrow {
     margin: 0 20px;
     margin-left: 18px;
 }
-.blog-link{
+    &__way-link{
     font-family: 'Crimson Text', serif;
     font-style: italic;
     font-weight: normal;
@@ -34,31 +33,31 @@
     margin-left: 4px;
     text-decoration: none;
 }
-.blog__wrapper {
+    &__wrapper {
     display: flex;
     flex-wrap: wrap;
 }
-.blog__link{
+    &__link{
     display: block;
     height: 100%;
     color: #000;
     text-decoration: none;
 }
-.blog__item {
+   &__item {
     width: 380px;
     margin-left: 20px;
-}
-.blog__item:first-child{
+       &:first-child{
     margin: 0;
-}
-.blog__item:nth-child(4){
+  }
+       &:nth-child(4){
     margin-left: 0;
+  }
 }
-.blog__date {
+    &__date {
     margin-bottom: 7px;
     color: #818181;
 }
-.blog__subtitle {
+    &__subtitle {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -67,16 +66,16 @@
     margin-top: 0;
     margin-bottom: 15px;
     color: #1E0606;
-}
-.blog__subtitle:hover{
+        &:hover{
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
-}
-.blog__subtitle:active{
+    }
+        &:active{
     -webkit-text-decoration-line: underline;
             text-decoration-line: underline;
+    }
 }
-.blog__text {
+    &__text {
     font-weight: normal;
     font-size: 18px;
     line-height: 25px;
@@ -84,7 +83,7 @@
     margin-top: 0;
     padding-bottom: 20px;
 }
-.blog__select-button {
+    &__select-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,7 +93,7 @@
     position: relative;
     margin-bottom: -12px;
 }
-.blog__btn-one{
+    &__btn-one{
     position: absolute;
     top: 14px;
     left: 0;
@@ -106,17 +105,17 @@
     background-color: #fff;
     cursor: pointer;
     outline: 0;
-}
-.blog__btn-one:hover{
+        &:hover{
     background-image: url("/static/images/svg/Vector%20-on.svg");
     -webkit-transform: matrix( -1, 0, 0, 1, 0, 0);
         -ms-transform: matrix( -1, 0, 0, 1, 0, 0);
             transform: matrix( -1, 0, 0, 1, 0, 0);
-}
-.blog__btn-one:active{
+  }
+        &:active{
     opacity: 0.5;
+  }
 }
-.blog__btn{
+    &__btn{
     position: absolute;
     top: 13px;
     left: 1163px;
@@ -128,36 +127,36 @@
     background-color: #fff;
     cursor: pointer;
     outline: 0;
-}
-.blog__btn:hover{
+        &:hover{
     background-image: url("/static/images/svg/Vector%20-on.svg");
     -webkit-transform: matrix( 1, 0, 0, 1, 0, 0);
         -ms-transform: matrix( 1, 0, 0, 1, 0, 0);
             transform: matrix( 1, 0, 0, 1, 0, 0);
+   }
+        &:active{
+        opacity: 0.5;
+   }
 }
-.blog__btn:active{
-    opacity: 0.5;
-}
-.blog__list-item{
+    &__list-item{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     margin-right:65px;
+        &:hover{
+        opacity: 0.5;
+  }
 
 }
-.blog__list-item:hover{
-    opacity: 0.5;
-}
-.blog__number-one{
+    &__number-one{
     text-decoration: none;
     color: #C29974;
 }
-.blog__number{
+    &__number{
     text-decoration: none;
     color: #000;
 }
-.blog__list-button {
+    &__list-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165,3 +164,14 @@
     margin-top: 19px;
     margin-left: 436px;
 }
+
+    
+}
+
+
+
+
+
+
+
+

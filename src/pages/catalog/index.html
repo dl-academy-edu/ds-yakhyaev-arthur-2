@@ -15,34 +15,35 @@
         <section class="catalog">
             <div class="container">
                 <h1 class="catalog__title">Category Products</h1>
-                <div class="catalog__select"> <a class="link" href="/" title="Go to Home">Home</a> <img class="catalog__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12"> <a class="catalog-link" href="#">Catalog</a> </div>
+                <div class="catalog__select"> <a class="link" href="/" title="Go to Home">Home</a> <img class="catalog__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12"> <a class="catalog__way-link" href="#">Catalog</a> </div>
                 <ul class="catalog__block-list">
-                     @@include("services__block-item/index.html",{
+                     @@include("services__catalog-item/index.html",{
                        "title": "APPAREL KIDS",
                         "title-link": "apparel kids",
                         "img": "catalog1.png"
                        })
-                       @@include("services__block-item/index.html",{
+                       @@include("services__catalog-item/index.html",{
                         "title": "HOLIDAY SHOP",
                         "title-link": "holiday shop",
                         "img": "catalog2.png"
                        })
-                       @@include("services__block-item/index.html",{
+                       @@include("services__catalog-item/index.html",{
                        "title": "TOYS",
                         "title-link": "toys",
                         "img": "catalog3.png"
+                       
                        })
-                       @@include("services__block-item/index.html",{
+                       @@include("services__catalog-item/index.html",{
                        "title": "ACCESSORIES",
                         "title-link": "accessories",
                         "img": "catalog4.png"
                        }) 
-                        @@include("services__block-item/index.html",{
+                        @@include("services__catalog-item/index.html",{
                        "title": "SALE",
                         "title-link": "sale",
                         "img": "catalog5.png"
                        })
-                       @@include("services__block-item/index.html",{
+                       @@include("services__catalog-item/index.html",{
                        "title": "APPAREL ADULTS",
                         "title-link": "apperel adults",
                         "img": "catalog6.png"

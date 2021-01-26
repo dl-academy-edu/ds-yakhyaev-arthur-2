@@ -18,7 +18,7 @@
             <div class="contact__select">
                 <a class="link" href="/" title="Go to Home">Home</a>
                 <img class="contact__arrow" src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
-                <a class="contact-link" href="#">Contact Us</a>
+                <a class="contact__way-link" href="#">Contact Us</a>
             </div>
             <div class="contact__wrapper">
             <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
@@ -43,7 +43,12 @@
                     <input  id="check-consent" type="checkbox" class="contact__checkbox-input" checked>
                     <label class="contact__consent-text"  for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
                 </div>
-                <button class="contact__button" type="submit">Submit</button>
+                @@include("button/index.html", {
+                        "class": "button__link",
+                        "type": "button",
+                        "title": "SUBMIT",
+                        "title-link": "submit"
+                        })
             </form>
             
             <div class="contact__descript">

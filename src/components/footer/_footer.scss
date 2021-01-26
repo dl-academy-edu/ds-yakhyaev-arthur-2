@@ -5,8 +5,7 @@
     width: 100%;
     background-color: #434343;
     padding: 100px 0;
-}
-.footer__wrapper {
+    &__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16,7 +15,7 @@
     margin-top: -2px;
     margin-left: 1px;
 }
-.footer__title {
+    &__title {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -24,8 +23,7 @@
     margin-bottom: 51px;
     position: relative;
     color: #AAAAAA;
-}
-.footer__title::before{
+        &::before{
     content: "";
     position: absolute;
     top: 47px;
@@ -33,54 +31,35 @@
     width: 380px;
     height: 2px;
     background-color: #666666;
+   }
 }
-.footer__list{
+    &__list{
     padding-left: 0px;
     padding-top: 3px;
     margin-left: 2px;
     margin-bottom: 28px;
 }
-.footer__link {
+    &__link {
     margin-bottom: 15px;
     color: #FFFFFF;
     list-style: none;
 }
-.footer__email {
+    &__email {
     width: 299px;
     height: 40px;
     padding-left: 15px;
     margin-top: 1px;
+    margin-right: -4px;
     border: 0;
     background-color:#666;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-}
-.footer__email:hover{
-    border: 1px solid #FFFDFD;
+        &:hover{
+        border: 1px solid #FFFDFD;
     
+   }
 }
-.footer__button-link {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    padding: 9px 22px;
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    background-color: black;
-    margin-left: -4px;
-    text-transform: uppercase;
-    border: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-}
-.footer__button-link:hover{
-    background-color: #C29974;
-}
-.footer__button-link:active{
-    background-color: #CFAF91;
-}
-.footer__icon {
+    &__icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -92,10 +71,10 @@
     margin: 0;
     list-style: none;
 }
-.footer__ic {
+    &__ic {
    margin-right: 10px;
 }
-.footer__link-icon{
+    &__link-icon{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -105,31 +84,33 @@
     border-radius:50%;
     background-color: #666666;
     margin: 0;
-}
-.footer__link-icon:hover{
-opacity: 0.5;
-}
-.footer__link-icon:active{
-opacity: 0.2;
-}
-.footer__svg{
+
+    &:hover{
+    opacity: 0.5;
+   }
+    &:active{
+    opacity: 0.2;
+   }
+        
+  }  
+    &__svg{
     display: block;
     margin: auto;
-}
-.footer__svg:hover{
+        &:hover{
     opacity: 0.5;
-}
-.footer__svg:active{
+  }
+      &:active{
     opacity: 0.2;
+  }  
 }
-.footer__border-bottom{
+    &__border-bottom{
     margin-bottom: 26px;
     width: 1180px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 1px solid #666666;
 }
-.footer__bottom {
+    &__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141,7 +122,7 @@ opacity: 0.2;
             align-items: flex-start;
     margin-top: 23px;
 }
-.footer__bottom-rating {
+    &__bottom-rating {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,15 +130,19 @@ opacity: 0.2;
         -ms-flex-align: center;
             align-items: center;
 }
-.footer__rating{
+    &__rating{
     position: relative;
     margin: 0;
     margin-top: 5px;
     padding: 0;
     color: #fff;
     border: none;
+        &:hover{
+    color: #C29974;
+    cursor: pointer;
+  }
 }
-.footer__rating-legend{
+    &__rating-legend{
     position: absolute;
     top: -4px;
     left: -148px;
@@ -165,11 +150,7 @@ opacity: 0.2;
     margin-bottom: 0;
     padding: 0;
 }
-.footer__rating:hover{
-    color: #C29974;
-    cursor: pointer;
-}
-.footer__rating-grup{
+    &__rating-grup{
     position: relative;
     width: 100px;
     height: 15px;
@@ -179,7 +160,7 @@ opacity: 0.2;
     background-repeat: repeat-x;
     background-color: #434343;
 }
-.rating__star {
+    &__rating-star {
     position: absolute;
     top: 0;
     left: 0;
@@ -191,58 +172,59 @@ opacity: 0.2;
        -moz-appearance: none;
             appearance: none;
     background-repeat: repeat-x;
-}
-.rating__star:hover {
+        &:hover {
     background-image: url(/static/images/svg/Star-hover.svg);
     background-color: #434343;
     cursor: pointer;
-}
-.rating__star:checked {
+  }
+        &:checked {
     background-image: url(/static/images/svg/Star-activ.svg);
     background-color: #434343;
     cursor: pointer;
-}
-.rating__star:hover ~ .rating__star {
+   }
+        &:hover ~ .footer__rating-star {
     background-image: url(/static/images/svg/Star-off.svg);
     background-color: #434343;
-}
-.rating__star:checked ~ .footer__rating-legend {
+  }
+        &:checked ~ .footer__rating-legend {
     color: #C29974;
-}
-.rating__star:nth-of-type(1) {
+  }
+        &:nth-of-type(1) {
     z-index: 5;
     width: 20px;
     margin-right: 2px;
     outline: 0;
-}
-.rating__star:nth-of-type(2) {
+  }
+        &:nth-of-type(2) {
     z-index: 4;
     width: 40px;
     outline: 0;
-}
-.rating__star:nth-of-type(3) {
+  }
+        &:nth-of-type(3) {
     z-index: 3;
     width: 60px;
     outline: 0;
-}
-.rating__star:nth-of-type(4) {
+  }
+        &:nth-of-type(4) {
     z-index: 2;
     width: 80px;
     outline: 0;
-}
-.rating__star:nth-of-type(5) {
+  }
+        &:nth-of-type(5) {
     z-index: 1;
     width: 100px;
     outline: 0;
+  }
+        
 }
-.footer__title-link{
+    &__title-link{
     color: #fff;
     text-decoration: none;
-}
-.footer__title-link:hover{
+        &:hover{
     color: #C29974;
+  }
 }
-.footer__bottom-list {
+    &__bottom-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,17 +236,17 @@ opacity: 0.2;
     padding-left: 23px;
     list-style: none;
 }
-.footer__list-link{
+    &__list-link{
     color: #fff;
     text-decoration: none;
-}
-.footer__list-link:hover{
+        &:hover{
     opacity: 0.5;
-}
-.footer__list-link:active{
+  }
+        &:active{
     opacity: 0.2;
+  }
 }
-.footer__star-link{
+    &__star-link{
     width: 17px;
     height: 17px;
     border:0;
@@ -272,21 +254,35 @@ opacity: 0.2;
     background-repeat: no-repeat;
     background-size: 17px auto;
 }
-.footer__bottom-subtitle{
+    &__bottom-subtitle{
     margin-left: 30px;
     margin-top: 0;
     color: #fff;
 }
-.footer__title-web {
+    &__title-web {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     margin-top: 0;
     padding-right: 81px;
     color: #AAAAAA;
-}
-.footer__title-web:hover{
+        &:hover{
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     color:#fff;
+ }
 }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

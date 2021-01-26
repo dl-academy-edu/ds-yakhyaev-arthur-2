@@ -27,7 +27,13 @@
                 <h4 class="footer__title">Connect</h4>
                 <form class="footer__form" action="https://echo.htmlacademy.ru" method="post">
                     <input class="footer__email" id="email-input" type="email" placeholder="Email">
-                   <a class="footer__button-link" href="https://echo.htmlacademy.ru">Join</a>
+                    @@include("link/index.html", {
+                        "class": "button__link",
+                        "title": "JOIN",
+                        "title-link": "Join",
+                        "link": "https://echo.htmlacademy.ru"
+                        })
+                   
                 </form>
                 <ul class="footer__icon">
                     <li class="footer__ic">
@@ -68,19 +74,19 @@
            <span class="visually__hidden">Company Rating</span>
          
             <label class="visually__hidden" for="rating-terribly">Terribly</label>
-            <input class="rating__star" id="raiting-terribly" type="radio"  name="star" value="1">
+            <input class="footer__rating-star" id="raiting-terribly" type="radio"  name="star" value="1">
             
             <label class="visually__hidden" for="rating-bad">Bad</label>
-            <input class="rating__star" id="raiting-bad" type="radio" name="star" value="2">
+            <input class="footer__rating-star" id="raiting-bad" type="radio" name="star" value="2">
             
             <label class="visually__hidden" for="rating-normal">Normal</label>
-            <input class="rating__star" id="rating-normal" type="radio"  name="star" value="3">
+            <input class="footer__rating-star" id="rating-normal" type="radio"  name="star" value="3">
            
             <label class="visually__hidden" for="raiting-good">Good</label>
-            <input class="rating__star" id="rating-good" type="radio"  name="star" value="4">
+            <input class="footer__rating-star" id="rating-good" type="radio"  name="star" value="4">
            
             <label class="visually__hidden" for="rating-excellent">Excellent</label> 
-            <input class="rating__star" id="rating-excellent" type="radio"  name="star" value="5">
+            <input class="footer__rating-star" id="rating-excellent" type="radio"  name="star" value="5">
           
            <div class="footer__rating-legend">Company Rating</div>
            
