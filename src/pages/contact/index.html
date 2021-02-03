@@ -12,52 +12,80 @@
   <body>
     @@include('header/index.html')
     <main>
-      <section class="contact">
-        <div class="container">
+      <section class="contact container">
+       
+        
+           
             <h1 class="contact__title">Contact Us</h1>
+            
             <div class="contact__select">
                 <a class="link" href="/" title="Go to Home">Home</a>
                 <img class="contact__arrow" src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
                 <a class="contact__way-link" href="#">Contact Us</a>
             </div>
-            <div class="contact__wrapper">
-            <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="contact__name">
-                    <label class="contact__item-name" for="name-input">Name</label>
-                    <input class="contact__line-name" id="name-input" type="text" placeholder="Ivan Ivanov"> </div>
-                    
-                <div class="contact__line-item">
-                    <div class="contact__phone">
-                        <label class="contact__item-phone" for="phone-input">Phone</label>
-                        <input class="contact__line-phone" id="phone-input" type="text"></div>
-                    <div class="contact__email">
-                        <label class="contact__item-email" for="contact-email">Email</label>
-                        <input class="contact__line-email" id="contact-email" type="email"></div>
-                </div>
-                
-                <div class="contact__message">
-                    <label class="contact__item-message" for="textarea">Message</label>
-                    <textarea class="contact__line-text" id="textarea">  </textarea>
-                </div>
-                <div class="contact__consent">
-                    <input  id="check-consent" type="checkbox" class="contact__checkbox-input" checked>
-                    <label class="contact__consent-text"  for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
-                </div>
-                @@include("button/index.html", {
-                        "class": "button__link",
-                        "type": "button",
-                        "title": "SUBMIT",
-                        "title-link": "submit"
-                        })
-            </form>
             
+       <div class="contact__wrapper">
+            
+            <form class="contact__form" action="https://echo.htmlacademy.ru" method="post">
+
+                    <fieldset class="contact__field">
+
+
+                        <div class="contact__wrap">
+
+                            <label class="contact__label" for="name-input">Name</label>
+                            <input class="contact__input" id="name-input" type="text" name="name-input" placeholder="Ivan Ivanov" required>
+
+                        </div>
+
+
+                <div class="contact__wrap contact__wrap--part">
+                         <div class="contact__wrap contact__wrap--item">
+
+                            <label class="contact__label" for="phone-input">Phone</label>
+                            <input class="contact__input" id="phone-input" type="text" name="phone-input" required>
+
+                        </div>
+
+                        <div class="contact__wrap">
+
+                            <label class="contact__label" for="contact-email">Email</label>
+                            <input class="contact__input" id="contact-email" type="email" name="contact-email" required>
+
+                        </div>
+                   </div>
+
+
+                <div class="contact__wrap">
+
+                            <label class="contact__label" for="textarea">Message</label>
+                            <textarea class="contact__message" id="textarea"  name="textarea" rows="8" cols="80">  </textarea>
+                       </div>
+
+
+                <div class="contact__information">
+
+                            <input class="contact__input  contact__input--hidden" id="check" type="checkbox" name="check" required>
+                            <label class="contact__text"  for="check">By clicking on the button, you consent to the processing of your personal data </label>
+                        </div>
+
+                        @@include("button/index.html", {
+                                "class": "button__link",
+                                "type": "button",
+                                "title": "SUBMIT",
+                                "title-link": "submit"
+                               })
+
+                        </fieldset>
+                    </form>
+
             <div class="contact__descript">
-                <p class="contact__text"> Our support team are on-hand to assist with any issues you are experiencing. </p>
-                <p class="contact__text"> Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
+                <p class="contact__info"> Our support team are on-hand to assist with any issues you are experiencing. </p>
+                <p class="contact__info"> Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible. </p>
                 <p class="contact__subtext"> An expert is waiting to help you! </p>
             </div>
         </div>
-        </div>
+        
     </section>
     </main>
     @@include('footer/index.html')
