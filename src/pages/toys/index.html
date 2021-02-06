@@ -15,93 +15,114 @@
     <main class="main">
     <section class="toys">
         <div class="container">
+           
             <h1 class="toys__title">Toy for kids</h1>
-            <div class="toys__select"> 
-            <a class="link" href="/" title="Go to Home">Home</a> 
-            <img class="toys__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
-            <a class="link" href="/pages/catalog" title="Go to Catalog">Catalog</a> 
-            <img class="toys__arrow" src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12"> <a class="toys-link" href="#">Toys</a>
-            </div>
+               
+                <div class="toys__select"> 
+                   <a class="link" href="/" title="Go to Home">Home</a> 
+                       <img class="toys__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
+                         <a class="link" href="/pages/catalog" title="Go to Catalog">Catalog</a> 
+                           <img class="toys__arrow" src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12"> 
+                             <a class="toys__way-link" href="#">Toys</a>
+                 </div>
          </div>
           
            <div class="toys__wrapper">
-            <form class="toys__form" action="#" method="post">
-                <div class="toys__wrap">
-                   <fieldset class="toys__fieldset">
-                      <legend class="toys__title-cost">Cost</legend>
-                        <div class="toys__item">
-                            <div class="toys__border"></div>
-                            <div class="toys__img"></div>
-                            <div class="toys__border-two"></div>
-                      </div>
-                      <div class="toys__numeral">
-                          <span class="toys__numer">0</span>
-                          <span class="toys__numer-two">500</span>
-                      </div>
-                    </fieldset>
-                    
-                    <fieldset class="toys__fieldset-two">
-                    
-                    <legend class="toys__title-color">Color</legend>
-                    <ul class="toys__color">
-                         <li class="toys__items">
-                            <input class="toys__input" type="Checkbox" id="black" value="black" name="Color"  checked>
-                          <label class="toys__colors" for="black">Black</label>
-                        </li>
-                        <li class="toys__items">
-                            <input class="toys__input" type="Checkbox" id="blue" value="blue" name="Color">
-                            <label class="toys__colors" for="blue">Blue</label>
-                        </li>
-                        <li class="toys__items">
-                            <input class="toys__input" type="Checkbox" id="green" value="green" name="Color">
-                            <label class="toys__colors" for="green">Green</label>
-                        </li>
-                        <li class="toys__items">
-                            <input class="toys__input" type="Checkbox" id="white" value="white" name="Color">   
-                            <label class="toys__colors" for="white">White</label>
-                        </li>
-                    </ul>
-            
-                    </fieldset>
-                    <fieldset class="toys__fieldset-three">
-                    <legend class="toys__title-delivery">Delivery</legend>
-                        <ul class="toys__delivery">
-                            <li class="toys__shipping-items">
-                            <input class="toys__delivery-input" type="radio" id="Free-shipping" value="Free-shipping" name="shipping">
-                            <label class="toys__color-item" for="Free-shipping">Free shipping</label>
-                        </li>
-                        <li class="toys__shipping-items">
-                            <input class="toys__delivery-input" type="radio" id="Fast-shipping" value="Fast-shipping" name="shipping" checked>
-                            <label class="toys__color-item" for="Fast-shipping">Fast shipping</label>
-                        </li>
-                    </ul>
-                    </fieldset>
-                    
-                    <fieldset class="toys__fieldset-four">
-                        <legend class="toys__title-amount">Amount</legend>
-                        <ul class="toys__amount-item">
-                        <li class="toys__amount-items">
-                            <input class="toys__amount-input" type="radio" id="radio_1" value="0-5" name="numer"  checked>
-                            <label class="toys__amount-number" for="radio_1">0-5</label>
-                        </li>
-                            <li class="toys__amount-items">
-                            <input class="toys__amount-input" type="radio" id="radio_2" value="10-20" name="numer">
-                            <label class="toys__amount-number" for="radio_2">10-20</label>
-                        </li>
-                          <li class="toys__amount-items">
-                           <input class="toys__amount-input" type="radio" id="radio_3" value="20-50" name="numer">
-                         <label class="toys__amount-number" for="radio_3">20-50</label>
-                        </li> 
-                        </ul>
-                </fieldset>
+               <form class="toys__form" action="#" method="post">
+                    <div class="toys__wrap">
+                      
+                       <fieldset class="toys__field toys__field--one">
+                          <legend class="toys__title-legend">Cost</legend>
+                              
+                               <div class="toys__item">
+                                    <div class="toys__border"></div>
+                                    <div class="toys__img"></div>
+                                    <div class="toys__border--two"></div>
+                               </div>
+                                 
+                                <div class="toys__numerals">
+                                      <span class="toys__numer-min">0</span>
+                                      <span class="toys__numer-max">500</span>
+                                </div>
+                                
+                            </fieldset>
+
+                                <fieldset class="toys__field toys__field--two">
+                                    <legend class="toys__title-legend">Color</legend>
+
+                                        <ul class="toys__color">
+
+                                            <li class="toys__items">
+                                                  <input class="toys__input" type="Checkbox" id="black" value="black" name="color_1"  checked>
+                                                  <label class="toys__label toys__label--color" for="black">Black</label>
+                                                </li>
+
+                                            <li class="toys__items">
+                                                    <input class="toys__input" type="Checkbox" id="blue" value="blue" name="color_2">
+                                                    <label class="toys__label toys__label--color" for="blue">Blue</label>
+                                                </li>
+
+                                            <li class="toys__items">
+                                                    <input class="toys__input" type="Checkbox" id="green" value="green" name="color_3">
+                                                    <label class="toys__label toys__label--color" for="green">Green</label>
+                                                </li>
+
+                                            <li class="toys__items">
+                                                    <input class="toys__input" type="Checkbox" id="white" value="white" name="color_4">   
+                                                    <label class="toys__label toys__label--color" for="white">White</label>
+                                                </li>
+
+                                        </ul>
+                                </fieldset>
+                                
+                                <fieldset class="toys__field toys__field--three"> 
+                                     <legend class="toys__title-legend">Delivery</legend>
+
+                                    <ul class="toys__delivery">
+
+                                        <li class="toys__delivery-items">
+                                            <input class="toys__input toys__input--hidden " type="radio" id="Free-shipping" value="Free-shipping" name="shipping">
+                                            <label class="toys__label toys__label--delivery" for="Free-shipping">Free shipping</label>
+                                        </li>
+
+                                        <li class="toys__delivery-items">
+                                            <input class="toys__input toys__input--hidden " type="radio" id="Fast-shipping" value="Fast-shipping" name="shipping" checked>
+                                            <label class=" toys__label toys__label--delivery" for="Fast-shipping">Fast shipping</label>
+                                        </li>
+                                        
+                                    </ul>
+                                </fieldset>
+
+                                <fieldset class="toys__field toys__field--four">
+                                    <legend class="toys__title-legend">Amount</legend>
+                                        <ul class="toys__amount">
+                                        
+                                            <li class="toys__amount-items">
+                                                <input class="toys__input toys__input--amount" type="radio" id="radio_1" value="0-5" name="numer"  checked>
+                                                <label class="toys__label toys__label--amount" for="radio_1">0-5</label>
+                                            </li>
+                                               
+                                            <li class="toys__amount-items">
+                                                <input class="toys__input toys__input--amount" type="radio" id="radio_2" value="10-20" name="numer">
+                                                <label class="toys__label toys__label--amount" for="radio_2">10-20</label>
+                                            </li>
+                                             
+                                            <li class="toys__amount-items">
+                                               <input class="toys__input toys__input--amount" type="radio" id="radio_3" value="20-50" name="numer">
+                                             <label class="toys__label toys__label--amount" for="radio_3">20-50</label>
+                                            </li> 
+                                            
+                                         </ul>
+                                 </fieldset>
                   
                    <div class="toys__form-btn">
-                    <button class="toys__button" type="submit">Apply</button>
+                      <button class="toys__button" type="submit">Apply</button>
                     </div>
                 
                 </div>
             </form>
            </div>
+           
             <div class="toys__catalog">
                 <ul class="toys__list">
                     <li class="toys__icon">
@@ -111,6 +132,7 @@
                             <p class="toys__price">$60.00 USD</p> 
                         </a>
                     </li>
+                    
                     <li class="toys__icon">
                         <a class="toys__link" href="#"><img class="toys__catalog-img"  src="/static/images/toys/toys-2.png" alt="Toys2" width="380" height="385">
                            <div class="toys__learn-more">Learn more</div>
@@ -118,6 +140,7 @@
                             <p class="toys__price">$66.00 USD</p>
                         </a>
                     </li>
+                    
                     <li class="toys__icon">
                         <a class="toys__link" href="#"><img class="toys__catalog-img"  src="/static/images/toys/toys-3.png" alt="Toys3" width="380" height="385">
                            <div class="toys__learn-more">Learn more</div>
@@ -125,39 +148,43 @@
                             <p class="toys__price">$60.00 USD</p>
                         </a>
                     </li>
+                    
                     <li class="toys__icon">
                         <a class="toys__link" href="#"><img class="toys__catalog-img"  src="/static/images/toys/toys-4.png" alt="Toys4" width="380" height="385">
                            <div class="toys__learn-more">Learn more</div>
-                            <h4 class="toys__title-two">Gatcha gatcha gumball machine</h4>
-                            <p class="toys__price-two">$56.00 USD</p>
+                            <h4 class="toys__title-list">Gatcha gatcha gumball machine</h4>
+                            <p class="toys__price">$56.00 USD</p>
                         </a>
                     </li>
                     <li class="toys__icon">
                         <a class="toys__link" href="#"> <img class="toys__catalog-img"  src="/static/images/toys/toys-5.png" alt="Toys5" width="380" height="385">
                            <div class="toys__learn-more">Learn more</div>
-                            <h4 class="toys__title-two">Christmas advent scented candle</h4>
-                            <p class="toys__price-two">$29.00 USD</p>
+                            <h4 class="toys__title-list">Christmas advent scented candle</h4>
+                            <p class="toys__price">$29.00 USD</p>
                         </a>
                     </li>
+                    
                     <li class="toys__icon">
                         <a class="toys__link" href="#"> <img class="toys__catalog-img"  src="/static/images/toys/toys-6.png" alt="Toys6" width="380" height="385">
                            <div class="toys__learn-more">Learn more</div>
-                            <h4 class="toys__title-two">Tangle spinning tea light</h4>
-                            <p class="toys__price-two">$56.00 USD</p>
+                            <h4 class="toys__title-list">Tangle spinning tea light</h4>
+                            <p class="toys__price">$56.00 USD</p>
                         </a>
                     </li>
-             </ul> 
-                <div class="toys__select-button">
-                    <button class="toys__btn-one"></button>
+                    
+                </ul> 
+                
+         <div class="toys__select-button">
+            <button class="toys__btn"></button>
                     
                 <ul class="toys__list-button">
-                   <li class="toys__list-item"><a class="toys__number-one" href="#">1</a></li>
-                   <li class="toys__list-item"><a class="toys__number" href="#">2</a></li>
-                   <li class="toys__list-item"><a class="toys__number" href="#">3</a></li>
-                   <li class="toys__list-item"><a class="toys__number" href="#">4</a></li>
-                    
-                </ul>
-                    <button class="toys__btn"></button>
+                   <li class="toys__list-item"><a class="toys__number toys__number--one" href="#">1</a></li>
+                     <li class="toys__list-item"><a class="toys__number" href="#">2</a></li>
+                       <li class="toys__list-item"><a class="toys__number" href="#">3</a></li>
+                         <li class="toys__list-item"><a class="toys__number" href="#">4</a></li>
+                  </ul>
+                   
+                    <button class="toys__btn toys__btn--active"></button>
                 </div>
             </div>
       

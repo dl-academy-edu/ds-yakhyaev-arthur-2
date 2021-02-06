@@ -1,5 +1,5 @@
 
- .button__link{
+.button__link{
     display: -webkit-inline-box;
     font-weight: bold;
     font-size: 16px;
@@ -18,4 +18,7 @@
         &:active{
     background-color: #CFAF91;
   }
+}
+.button__click{
+    margin-left: 60px;
 }
