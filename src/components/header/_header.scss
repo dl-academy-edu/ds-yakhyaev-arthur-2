@@ -14,13 +14,14 @@
     &__logo {
         
     &:hover{
-    opacity: 0.5;
+        opacity: 0.5;
+        transition: opacity .4s ease .1s;
     }
         
     &:active{
-    opacity: 0.2;
+        opacity: 0.2;
     }
-  }
+   }
         
     &__nav{
         display: -webkit-box;
@@ -50,15 +51,15 @@
         display: flex;
         margin-right: 2px;
         margin-top: -2px;
-    }
         
-    &__search {
+    &-search {
         margin-right: 24px;
         margin-left: -1px;
         margin-top: 1px;
         
     &:hover{
         opacity: 0.5;
+        transition: opacity .4s ease .1s;
     }
         
     &:active{
@@ -66,18 +67,25 @@
     }
 }
         
-    &__button {
+    &-button {
         font-weight: bold;
         font-size: 14px;
         line-height: 19px;
         color: #1E0606;
         text-transform: uppercase;
         text-decoration: none;
-    &:hover{
+       
+     &:hover{
         opacity: 0.5;
-    }
-    &:active{
+        transition: opacity .4s ease .1s;
+     }
+       
+     &:active{
         opacity: 0.2;
-    }
-  }
+     }
+  }      
+ }
 }
+  
+        
+  

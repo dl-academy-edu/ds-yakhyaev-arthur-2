@@ -27,6 +27,7 @@ body {
 }
 .link-nav:hover{
     opacity: 0.5;
+    transition: opacity .4s ease .1s;
 }
 .link-nav:active{
     opacity: 0.2;
@@ -51,7 +52,7 @@ body {
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
             clip-path: inset(100%);
-    clip: rect(0 0 0 0);
+    clip: reсt(0 0 0 0);
     overflow: hidden;
 }
 
