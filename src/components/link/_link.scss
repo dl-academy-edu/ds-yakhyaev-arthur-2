@@ -24,4 +24,10 @@
 }
 .button__click{
     margin-left: 60px;
+ @media screen and (max-width: $md) {
+          margin: 0 0 0 0;
+     
+        }
+
+     
 }

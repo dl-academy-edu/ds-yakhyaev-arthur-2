@@ -1,4 +1,4 @@
-
+@import "../../components/media.scss";
 
 
 @keyframes car-1 {
@@ -89,59 +89,53 @@
 
 .animation{
     
-     &__title {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 49px;
-        margin-bottom: 15px;
-        margin-top:-4px;
-        margin-left: 2px;
-        text-transform: uppercase;
-    }
-        
-    &__select {
+    @media screen and (max-width: $md) {
+        height: 587px;
         margin-bottom: 50px;
-        margin-left: 1px;
-        margin-top: -1px;
-    }
-        
-    &__arrow {
-        margin: 0 20px;
-        margin-left: 18px;
-    }
-        
-    &__way-link{
-        font-family: 'Crimson Text', serif;
-        font-style: italic;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 25px;
-        color: #1E0606;
-        opacity: 0.5;
-        margin-left: 4px;
-        text-decoration: none;
-    }
+             } 
+    
+    @media screen and (max-width: $xs) {
+        height: 323px;
+             } 
     
     &__scene{
         position: relative;
         height: 900px;
         width: 100%;
         
-    &-img{
-        margin: 0 0 40px 0;
+    @media screen and (max-width: $md) {
+        width: 100%;
+             }
+    
+    &-sky{
+    @media screen and (max-width: $md) {
+        width: 769px;      
+      }
         
-    &-two{
-        margin: 0 0 10px 0; 
-     }
+    @media screen and (max-width: $xs) {
+        width: 375px;      
+             }
+        }
+        
+    &-city{
+         width: 1400px;
+        
+    @media screen and (max-width: $md) {
+        width: 769px;      
+     } 
+        
+    @media screen and (max-width: $xs) {
+        width: 375px;      
+             }
     }
-        
+    
     &-road{
         position: relative;
         width: 100%;
         height: 80px;
         margin: 0 0 60px 0;
         background-color: #f4ebff;
+       
         
     &--two{
         position: relative;
@@ -149,8 +143,25 @@
         height: 80px;
         margin: 0 0 20px 0;
         background-color: #f4ebff;
+        
+    @media screen and (max-width: $md) {
+        height: 47px;
+        } 
+        
+    @media screen and (max-width: $xs) {
+        height: 23px;  
+        
+        }
     }
         
+    @media screen and (max-width: $md) {
+        height: 47px;
+        } 
+        
+    @media screen and (max-width: $xs) {
+        margin: 0 0 20px 0;
+        height: 23px;      
+        }
  }
         
     &-latern{
@@ -160,6 +171,19 @@
         top: -296px;
         left: 30%;
         z-index: 2;  
+        
+   @media screen and (max-width: $md) {
+        top: -142px;
+        width: 100px;
+        height: 200px;
+      } 
+        
+   @media screen and (max-width: $xs) {
+        top: -69px;
+        width: 50px;
+        height: 100px;
+      } 
+  
     }
         
     &--two{
@@ -167,6 +191,20 @@
         top: -296px;
         left: 93%;
         z-index: 2;  
+        
+    @media screen and (max-width: $md) {
+        top: -140px;
+        left: 677px;
+        width: 100px;
+        height: 200px;
+       } 
+        
+    @media screen and (max-width: $xs) {
+        top: -69px;
+        left: 323px;
+        width: 50px;
+        height: 100px;
+      } 
     }
         
     &--three{
@@ -174,6 +212,18 @@
         top: -308px;
         left: 70%;
         z-index: 7;
+        
+    @media screen and (max-width: $md) {
+        top: -109px;
+        width: 151px;
+        height: 280px;
+     } 
+        
+    @media screen and (max-width: $xs) {
+        top: -65px;
+        width: 80px;
+        height: 140px;
+      } 
     }
             
 }
@@ -188,42 +238,122 @@
     &-car{
         position: absolute;
         
+    @media screen and (max-width: $md) {
+       width: 122px;
+       height: 87px;
+      } 
+        
+    @media screen and (max-width: $xs) {
+       width: 61px;
+       height: 43px;     
+      }
+        
     &--one{
-        animation: car-1 15s linear .7s infinite ; 
+       animation: car-1 15s linear .7s infinite ; 
+        
+    @media screen and (max-width: $md) {
+        top: 13px;
+       } 
+        
+    @media screen and (max-width: $xs) {
+        top:42px;  
+      }
     }
         
     &--two{
         top: 10px;
         animation: car-1  15s linear 2s infinite;
+        
+    @media screen and (max-width: $md) {
+        top: 34px;
+      } 
+        
+    @media screen and (max-width: $xs) {
+        top:46px;  
+      }
     }
+       
         
     &--three{
         top: 55px;
         animation: car-1 15s linear 4s infinite ;
+        
+    @media screen and (max-width: $md) {
+       top: 40px;
+       left: -69px;
+      } 
+        
+    @media screen and (max-width: $xs) {
+       top:55px;  
+      }
     }
         
     &--four{
-        top: 20px;
-        animation: car-1 19s linear 7s normal infinite running;  
+       top: 20px;
+       animation: car-1 19s linear 7s normal infinite running;  
+        
+  @media screen and (max-width: $md) {
+       top: 45px;
+       left: -47px;
+             } 
+  @media screen and (max-width: $xs) {
+       top:57px;  
+             }
     }
 }
+      
         
-    &-taxi{
+   &-taxi{
         position: absolute;
         top: -193px;
-        left: 650px;
+        right: -300px;
         z-index: 4;
         animation: taxi 10s linear 4s normal infinite;
+        
+    @media screen and (max-width: $md) {
+        top: -91px;
+        right: 0;
+     }
+        
+    @media screen and (max-width: $xs) {
+        top: -47px;
+         right: 0;
+     }
+        
+       
+   &--start{
+       
+   @media screen and (max-width: $md) {
+       width: 420px;
+       height: 135px;
+    }
+       
+   @media screen and (max-width: $xs) {
+      width: 200px;
+      height: 75px;
+    }
+  }
+    
           
-    &-message {
+   &-message {
         position: absolute;
         top: -250px;
-        left: 49%;
+        left: 65%;
         z-index: 9;
         width: auto;
         opacity: 0;
         transform: translateY(50%);
         animation: taxi-message 3s ease-in  7s both  running;
+         @media screen and (max-width: $md) {
+             top: -200px;
+         left: 32%;
+      } 
+       
+        @media screen and (max-width: $xs) {
+         display: none;
+      } 
+       
+    
     }
 }
         
@@ -231,69 +361,110 @@
         position: relative;
     }
         
-     &-man{
+    &-man{
         position: absolute;
         top: -337px;
         left: 17%;
         z-index: 11;
         width: 210px;
         height: 362px;
+        
+    @media screen and (max-width: $md) {
+       top: -174px;
+       width: 107px;
+       height: 206px;
+    }
+        
+    @media screen and (max-width: $xs) {
+       top: -86px;
+       width: 53px;
+       height: 103px;
+    }
             
-     &-hand{
-          position: absolute;
-          top: -10%;
-          left: 0;
-          width: 43%;
-          height: auto; 
-          transform: rotate(156deg);
-          transform-origin: 15% 88%;
-          animation: man-hand 5s ease-in 3s  both running;
+    &-hand{
+        position: absolute;
+        top: -10%;
+        left: 0;
+        width: 43%;
+        height: auto; 
+        transform: rotate(156deg);
+        transform-origin: 15% 88%;
+        animation: man-hand 5s ease-in 3s  both running;
      }
          
      &-body {
-          position: absolute;
-          width: 100%;
-          height: auto;
+        position: absolute;
+        width: 100%;
+        height: auto;
      }
          
      &-message {
-          position: absolute;
-          top: -83px;
-          left: -14px;
-          animation: man-message 4s ease-in 3s both running;
-     }
+        position: absolute;
+        top: -83px;
+        left: -14px;
+        animation: man-message 4s ease-in 3s both running;
+      }
          
      &-arrow {
           position: absolute;
           left: 15%;
           z-index: 0;
+         
+     @media screen and (max-width: $xs) {
+          width: 100px;
+          height: 10px;
+      }
      }
     
     }
         
      &-woman{
           position: absolute;
-          top: -346px;
-          left: 3%;
+          top: -339px;
+          left: 4%;
           z-index: 13;
+         
+    @media screen and (max-width: $md) {
+         top: -178px;
+         left: 31px;
+    }
+    @media screen and (max-width: $xs) {
+        top: -88px;
+        left: 14px;
+    }
+    
             
-     &-body {
-          width: 192px;
+    &-body {
+          width: 271px;
           height: auto;
+        
+    @media screen and (max-width: $md) {
+         width: 138px;
+         height: 191px;
+    }
+        
+   @media screen and (max-width: $xs) {
+        width: 68px;
+        height: 96px;
+    }
         }
             
-     &-message {
-          position: absolute;
-          top: -654%;
-          left: -4%;
-          z-index: 14;
-          width: 169px;
-          height: auto;
-          padding: 7%;
-          box-sizing: border-box;
-          transform: translateY(50%);
-          animation: woman-message 4s ease-in 2s both running;
+   &-message {
+        position: absolute;
+        top: -654%;
+        left: -4%;
+        z-index: 14;
+        width: 169px;
+        height: auto;
+        padding: 7%;
+        box-sizing: border-box;
+        transform: translateY(50%);
+        animation: woman-message 4s ease-in 2s both running;
+       
+    @media screen and (max-width: $xs) {
+        display: none;
         }
+      }
      } 
    } 
 }

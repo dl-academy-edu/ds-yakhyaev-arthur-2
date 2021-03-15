@@ -1,5 +1,5 @@
 
- .button__link{
+.button__link{
     display: -webkit-inline-box;
     font-weight: bold;
     font-size: 16px;
@@ -12,12 +12,20 @@
     background-color: black;
     border: 0;
     outline: 0;
+    transition: background-color .6s ease .2s;
      
-    &:hover{
+ 
+&:hover{
     background-color: #C29974;
-    transition: background-color .5s ease .1s;
+    
   }
-        &:active{
+    
+&:active{
     background-color: #CFAF91;
   }
+    
+ 
+     
+    
+    
 }

@@ -1,3 +1,4 @@
+@import "./media";
 
 
 body {
@@ -14,6 +15,27 @@ body {
     margin: 0 auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    
+  @media screen and (max-width: 1180px) {
+    padding: 0 60px;
+        
+  }
+    
+  @media screen and (max-width: $md) {
+    
+    padding: 0 60px;
+  }
+
+  @media screen and (max-width: $sm) {
+   
+    padding: 0 ;
+  }
+
+   @media screen and (max-width: $xs) {
+   
+    padding: 0 ;
+  }
+
 }
 
 .link-nav {
@@ -24,10 +46,10 @@ body {
     color: #1E0606;
     text-transform: uppercase;
     text-decoration: none;
+    transition: opacity .5s ease .2s;
 }
 .link-nav:hover{
     opacity: 0.5;
-    transition: opacity .4s ease .1s;
 }
 .link-nav:active{
     opacity: 0.2;
@@ -40,6 +62,12 @@ body {
     line-height: 25px;
     text-decoration: none;
     color: #1E0606;
+@media screen and (max-width: $sm) {
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 20px;
+    
+    }
 }
 
 .visually__hidden {
@@ -52,7 +80,7 @@ body {
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
             clip-path: inset(100%);
-    clip: reсt(0 0 0 0);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -60,5 +88,8 @@ body {
 @import "./header/header";
 @import "./footer/footer";
 @import "./button/button";
-@import "./services__catalog-item/services__catalog-item";
+@import "./catalog-card/catalog-card";
 @import "./link/link";
+@import "./navigation/navigation";
+@import "./blog-card/blog-card";
+@import "./toys-card/toys-card";

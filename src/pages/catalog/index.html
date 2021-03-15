@@ -2,59 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link href="/common.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
+    <meta name="description" content="Catalog" />
+    <title>Catalog</title>
   </head>
+  
   <body>
-    @@include('header/index.html')
+@@include('header/index.html')
     <main class="main">
         <section class="catalog">
            
             <div class="container">
                
-                <h1 class="catalog__title">Category Products</h1>
+                <h1 class="navigation__title">Category Products</h1>
                 
-                  <div class="catalog__select"> <a class="link" href="/" title="Go to Home">Home</a>
-                        <img class="catalog__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
-                         <a class="catalog__way-link" href="#">Catalog</a> 
+                  <div class="navigation__select"> 
+                       <a class="link" href="/" title="Go to Home">Home</a>
+                        <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
+                         <a class="navigation__way-link" href="#">Catalog</a> 
                      </div>
                      
-                    <ul class="catalog__block-list">
+                    <ul class="catalog__list">
                     
-                     @@include("services__catalog-item/index.html",{
+                     @@include("catalog-card/index.html",{
                        "title": "APPAREL KIDS",
                         "title-link": "apparel kids",
-                        "img": "catalog1.png"
+                        "img": "catalog1.png",
+                        "img2x": "catalog1-x2.png",
+                        "imgTablet":"catalog1-tablet.png",
+                        "imgTablet2x":"catalog1-tablet-x2.png",
+                        "imgMobile":"catalog1-mobile.png",
+                        "imgMobile2x":"catalog1-mobile-x2.png",
+                        "alt": "APPAREL KIDS"
                        })
-                       @@include("services__catalog-item/index.html",{
+                       
+                       @@include("catalog-card/index.html",{
                         "title": "HOLIDAY SHOP",
                         "title-link": "holiday shop",
-                        "img": "catalog2.png"
+                        "img": "catalog2.png",
+                        "img2x": "catalog2-x2.png",
+                        "imgTablet":"catalog2-tablet.png",
+                        "imgTablet2x":"catalog2-tablet-x2.png",
+                        "imgMobile":"catalog2-mobile.png",
+                        "imgMobile2x":"catalog2-mobile-x2.png",
+                        "alt": "HOLIDAY SHOP"
                        })
-                       @@include("services__catalog-item/index.html",{
+                       
+                       @@include("catalog-card/index.html",{
                        "title": "TOYS",
                         "title-link": "toys",
-                        "img": "catalog3.png"
+                        "img": "catalog3.png",
+                        "img2x": "catalog3-x2.png",
+                        "imgTablet":"catalog3-tablet.png",
+                        "imgTablet2x":"catalog3-tablet-x2.png",
+                        "imgMobile":"catalog3-mobile.png",
+                        "imgMobile2x":"catalog3-mobile-x2.png",
+                        "alt": "TOYS"
                        
                        })
-                       @@include("services__catalog-item/index.html",{
+                       @@include("catalog-card/index.html",{
                        "title": "ACCESSORIES",
                         "title-link": "accessories",
-                        "img": "catalog4.png"
+                        "img": "catalog4.png",
+                        "img2x": "catalog4-x2.png",
+                        "imgTablet":"catalog4-tablet.png",
+                        "imgTablet2x":"catalog4-tablet-x2.png",
+                        "imgMobile":"catalog4-mobile.png",
+                        "imgMobile2x":"catalog4-mobile-x2.png",
+                        "alt": "ACCESSORIES"
                        }) 
-                        @@include("services__catalog-item/index.html",{
+                       
+                        @@include("catalog-card/index.html",{
                        "title": "SALE",
                         "title-link": "sale",
-                        "img": "catalog5.png"
+                        "img": "catalog5.png",
+                        "img2x": "catalog5-x2.png",
+                        "imgTablet":"catalog5-tablet.png",
+                        "imgTablet2x":"catalog5-tablet-x2.png",
+                        "imgMobile":"catalog5-mobile.png",
+                        "imgMobile2x":"catalog5-mobile-x2.png",
+                        "alt": "SALE"
                        })
-                       @@include("services__catalog-item/index.html",{
+                       
+                       @@include("catalog-card/index.html",{
                        "title": "APPAREL ADULTS",
                         "title-link": "apperel adults",
-                        "img": "catalog6.png"
+                        "img": "catalog6.png",
+                        "img2x": "catalog6-x2.png",
+                        "imgTablet":"catalog6-tablet.png",
+                        "imgTablet2x":"catalog6-tablet-x2.png",
+                        "imgMobile":"catalog6-mobile.png",
+                        "imgMobile2x":"catalog6-mobile-x2.png",
+                        "alt": "APPAREL ADULTS"
                        })                 
                 </ul>
                 <div class="catalog__descript">
@@ -65,13 +109,13 @@
 
                         <p class="catalog__subtext"> A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old. </p>
 
-                        <p class="catalog__sub-text"> The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress. </p>
+                        <p class="catalog__subtext"> The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress. </p>
                     
                 </div>
             </div>
         </section>
     </main>
     @@include('footer/index.html')
-    <script src="index.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
