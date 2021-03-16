@@ -2,25 +2,73 @@
         <div class="container">
            
             <div class="header__wrapper">
-                <a class="header__logo" href="/"><img class="header__img" src="/static/images/svg/dlk.svg" alt="Dlk-logo" width="100" height="52"></a>
+                <a class="header__logo" href="/"><img class="header__img" src="/static/images/svg/dlk.svg" alt="Dlk-logo" ></a>
                 
                 <nav class="header__nav">
                     <ul class="header__nav-list">
+                       <li class="header__nav-link"><a class="link-nav" href="/pages/catalog">Catalog</a></li>
+                       <li class="header__nav-link"><a class="link-nav" href="#">About Us</a></li>
                         <li class="header__nav-link"><a class="link-nav" href="/pages/blog">Blog</a></li>
-                           <li class="header__nav-link"><a class="link-nav" href="/pages/catalog">Catalog</a></li>
-                             <li class="header__nav-link"><a class="link-nav" href="#">About Us</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="/pages/animation">Animation</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="/pages/svg">Svg</a></li>
+                        <li class="header__nav-link"><a class="link-nav" href="/pages/grid">Grid</a></li>
                        </ul>
-                    
+                </nav> 
+                
+                <div class="header__menu">
+                <button class="header__menu-button " type="button ">Menu</button>
+                  <svg class="header__menu-close header__menu-close--hidden" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path class="header__menu-icon" fill-rule="evenodd" clip-rule="evenodd" d="M0.707105 0L0 0.707105L7.07111 7.77821L4.6869e-05 14.8493L0.707151 15.5564L7.77821 8.48532L14.8492 15.5563L15.5563 14.8492L8.48532 7.77821L15.5563 0.707178L14.8492 7.33696e-05L7.77821 7.07111L0.707105 0Z" fill="#1E0606"/>
+                       </svg>
+                   </div>
+                   
                     <div class="header__contact">
-                        <a class="header__search" href="#">
+                        <a class="header__contact-search" href="#">
                            <img src="/static/images/svg/search.svg" alt="search-logo" width="18" height="18">
                             </a> 
-                              <a class="header__button" href="/pages/contact">Contact Us</a>
+                              <a class="header__contact-button" href="/pages/contact">Contact Us</a>
                         </div>
-                </nav>
-               
-                
-             </div>
-             
-        </div>
+            </div>
+      </div>
+       
+                    <nav class="header__mobile header__mobile--hidden">
+
+                     <ul class="header__mobile-list">
+
+                       <li class="header__mobile-item">
+                         <a class="header__mobile-link" href="/pages/catalog">Catalog</a>
+                       </li>
+
+                       <li class="header__mobile-item">
+                         <a class="header__mobile-link" href="#">About us</a>
+                       </li>
+
+                       <li class="header__mobile-item">
+                         <a class="header__mobile-link" href="/pages/blog">Blog</a>
+                       </li>
+
+                       <li class="header__mobile-item">
+                         <a class="header__mobile-link" href="/pages/animation">Animation</a>
+                       </li>
+
+                       <li class="header__mobile-item">
+                         <a class="header__mobile-link" href="/pages/svg">Svg</a>
+                       </li>
+                       
+                       <li class="header__mobile-item">
+                         <a class="header__mobile-link" href="#">Grid</a>
+                       </li>
+
+                       <li class="header__mobile-item">
+                         <a class="header__mobile-link header__mobile-link--bold" href="/pages/contacts">Contact us</a>
+                       </li>
+
+                     </ul>
+
+                     <div class="header__mobile-bg"></div>
+
+                   </nav>
+      
+      
+      
     </header>

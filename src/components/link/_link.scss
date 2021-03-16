@@ -12,13 +12,22 @@
     background-color: black;
     border: 0;
     outline: 0;
-        &:hover{
+    
+&:hover{
     background-color: #C29974;
-  }
-        &:active{
+    
+    }
+    
+&:active{
     background-color: #CFAF91;
-  }
+   }
 }
 .button__click{
     margin-left: 60px;
+ @media screen and (max-width: $md) {
+          margin: 0 0 0 0;
+     
+        }
+
+     
 }

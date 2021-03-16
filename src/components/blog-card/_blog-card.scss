@@ -1,0 +1,141 @@
+  
+@import "./media";
+
+   .blog__card {
+        width: 380px;
+        margin-left: 20px;
+       
+    @media screen and (max-width: 1389px) {
+         margin: 0;
+       }
+       
+    @media screen and (max-width: $md) {
+         width: 314px;
+         margin: 0;
+     
+    &:nth-child(3){
+         margin-right: 20px;
+       } 
+        
+    &:nth-child(5){
+       margin-right: 20px;
+       } 
+ }
+    @media screen and (max-width: $xs) {
+        width: 335px;
+      }
+       
+        
+    &:first-child{
+        margin:0;
+        
+    @media screen and (max-width: $md) {
+        margin-right: 20px;
+      }
+   
+    }
+       
+       
+    &:nth-child(4){
+       margin-left: 0;
+       } 
+     
+    
+   .blog__card-link{
+        display: block;
+        height: 100%;
+        color: #000;
+        text-decoration: none;
+        }
+               
+     .blog__card-img{
+        width: 380px;
+         
+    @media screen and (max-width: $md) {
+        width: 314px;
+        height: 182px;
+        }
+         
+    @media screen and (max-width: 767px) {
+        width: 300px;
+        height: 172px;  
+      }
+         
+    @media screen and (max-width: $xs) {
+        margin-bottom: 15px;
+        }
+      }
+        
+        
+    
+               
+    .blog__card-date {
+        margin-bottom: 7px;
+        color: #818181;
+    }
+               
+    .blog__card-title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #1E0606;
+        
+    @media screen and (max-width: $sm) {
+        font-size: 24px;
+        line-height: 31px;
+      }
+        
+    @media screen and (max-width: $xs) {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 7px;
+      }
+        
+    &:hover{
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+    }
+    &:active{
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+    }
+}    
+    .blog__card-text {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 13px;
+        margin-top: 0;
+        padding-bottom: 20px;
+        
+    @media screen and (max-width: $xs) {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 0;
+      }
+    }
+
+
+  }   
+  
+        
+               
+    
+   
+      
+   
+      
+      
+      
+     
+      
+   
+      
+     
+  
+    
+   

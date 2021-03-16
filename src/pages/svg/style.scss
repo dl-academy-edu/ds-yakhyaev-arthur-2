@@ -1,0 +1,78 @@
+
+@keyframes line {
+  30%{
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(190px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes sun {
+  10% {
+    transform: translate(0px, 0px);
+  }
+  60% {
+    transform: translate(50px, 50px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+
+@keyframes hill {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-15px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.svg{
+    
+    &__arrow {
+        margin: 0 20px;
+        margin-left: 18px;
+    }
+    
+    &__item {
+       margin: 0 0 60px 0;
+    
+    &-header{
+        cursor: pointer;
+        max-width: 418px;
+        width: 100%;
+        height: 100%; 
+        outline: 0;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.2));
+          
+    }
+       
+    &-line{
+        animation: line 5s linear  infinite;
+            
+    }
+               
+    &-hill{
+       animation: hill 5s linear infinite;
+    }
+               
+    &-sun{
+       animation: sun 5s linear infinite;
+    }  
+    
+}
+   
+       
+  }
+    

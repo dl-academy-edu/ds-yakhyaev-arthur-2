@@ -1,0 +1,64 @@
+
+@import "./media";
+
+.navigation__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+        margin-bottom: 15px;
+        margin-top:-4px;
+        margin-left: 2px;
+        text-transform: uppercase;
+    
+ @media screen and (max-width: $md) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+ @media screen and (max-width: $sm) {
+        font-size: 24px;
+        line-height: 29px;
+        padding-left: 20px
+    }
+  @media screen and (max-width: $xs) {
+        font-size: 24px;
+        line-height: 29px;
+        
+    }
+    }
+        
+.navigation__select {
+        margin-bottom: 50px;
+        margin-left: 1px;
+        margin-top: -1px;
+    
+ @media screen and (max-width: $md) {
+        margin-bottom: 30px;
+       }
+    
+ @media screen and (max-width: $sm) {
+        margin-bottom: 20px;
+       }
+    }
+        
+.navigation__arrow {
+        margin: 0 20px;
+        margin-left: 18px;
+    }
+        
+.navigation__way-link{
+        font-family: 'Crimson Text', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        color: #1E0606;
+        opacity: 0.5;
+        margin-left: 4px;
+        text-decoration: none;
+    
+ @media screen and (max-width: $sm) {
+        font-size: 16px;
+        line-height: 20px;
+       }
+    }
