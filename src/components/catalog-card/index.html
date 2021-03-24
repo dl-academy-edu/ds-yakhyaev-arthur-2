@@ -1,14 +1,15 @@
 
-    <li class="catalog__item">
+    <div class="catalog__item">
   
             <picture class="catalog__img">
 
-            <source srcset="/static/images/catalog/@@imgMobile, /static/images/catalog/@@imgMobile2x " media="(max-width:740px)">
-            <source srcset="/static/images/catalog/@@imgTablet, /static/images/catalog/@@imgTablet2x " media="(max-width:1023px)">
-             <img   srcset="/static/images/catalog/@@img, /static/images/catalog/@@img2x 2x" alt="@@alt">
-             </picture>
+             <source srcset="/static/images/catalog/@@imgMobile 161w, /static/images/catalog/@@imgMobile2x 322w" media="(max-width:740px)"
+             sizes="161px">
+             <source srcset="/static/images/catalog/@@imgTablet 203w, /static/images/catalog/@@imgTablet2x 406w" media="(max-width:1023px)" sizes="203px">
+             <img  src="/static/images/catalog/@@img" srcset="/static/images/catalog/@@img, /static/images/catalog/@@img2x 2x" alt="@@alt">
+            </picture>
 
         <a class="catalog__link" href="@@href" title="Go to @@title-link"> 
           <h3 class="catalog__sub">@@title</h3>
          </a>
-    </li>
+    </div>

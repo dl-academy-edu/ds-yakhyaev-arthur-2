@@ -112,8 +112,15 @@
         width: 769px;      
       }
         
+    @media screen and (max-width: 411px) {
+        width:411px;      
+             }
+        
     @media screen and (max-width: $xs) {
         width: 375px;      
+             }
+    @media screen and (max-width: 360px) {
+        width: 360px;      
              }
         }
         
@@ -123,9 +130,16 @@
     @media screen and (max-width: $md) {
         width: 769px;      
      } 
+    @media screen and (max-width: 411px) {
+        width:411px;      
+             }
         
     @media screen and (max-width: $xs) {
         width: 375px;      
+             }
+        
+    @media screen and (max-width: 360px) {
+        width: 360px;      
              }
     }
     

@@ -2,7 +2,7 @@
 (function menu() {
 
   var elm = "header__mobile";
-  var buttonName = "header__menu-button";
+  var buttonName = "header__menu-btn";
   var closeName = "header__menu-close";
   var closeIcon = "header__menu-icon";
 
@@ -22,14 +22,14 @@
 
     if (e.target === button) {
       console.log("Show menu!");
-      e.target.classList.add(`header__menu-button${hidingClass}`);
+      e.target.classList.add(`header__menu-btn${hidingClass}`);
       close.classList.remove(`header__menu-close${hidingClass}`);
       menu.classList.remove(`header__mobile${hidingClass}`);
       document.body.style.overflow = "hidden";
     } else {
       console.log("Hide menu!");
       close.classList.add(`header__menu-close${hidingClass}`);
-      button.classList.remove(`header__menu-button${hidingClass}`);
+      button.classList.remove(`header__menu-btn${hidingClass}`);
       menu.classList.add(`header__mobile${hidingClass}`);
       document.body.style.overflow = "";
     }
