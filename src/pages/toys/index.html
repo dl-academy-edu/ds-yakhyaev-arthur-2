@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +15,9 @@
   <body>
     @@include('header/index.html')
     <main class="main">
-    <section class="toys">
+      
+       <section class="toys">
+   
         <div class="container">
            
             <h1 class="navigation__title">Toy for kids</h1>
@@ -34,7 +36,7 @@
                   
                       
                        <fieldset class="toys__field toys__field--one">
-                          <legend class="toys__title-legend">Cost</legend>
+                          <legend class="toys__title-legend" title="Cost">Cost</legend>
                               
                                <div class="toys__item">
                                     <div class="toys__border"></div>
@@ -56,22 +58,22 @@
 
                                             <li class="toys__items">
                                                   <input class="toys__input" type="Checkbox" id="black" value="black" name="color_1"  checked>
-                                                  <label class="toys__label toys__label--color" for="black">Black</label>
+                                                  <label class="toys__label toys__label--color" for="black" title="Black">Black</label>
                                                 </li>
 
                                             <li class="toys__items">
-                                                    <input class="toys__input" type="Checkbox" id="blue" value="blue" name="color_2">
-                                                    <label class="toys__label toys__label--color" for="blue">Blue</label>
+                                                    <input class="toys__input" type="Checkbox" id="blue" value="blue" name="color_2" >
+                                                    <label class="toys__label toys__label--color" for="blue" title="Blue">Blue</label>
                                                 </li>
 
                                             <li class="toys__items">
-                                                    <input class="toys__input" type="Checkbox" id="green" value="green" name="color_3">
-                                                    <label class="toys__label toys__label--color" for="green">Green</label>
+                                                    <input class="toys__input" type="Checkbox" id="green" value="green" name="color_3" >
+                                                    <label class="toys__label toys__label--color" for="green" title="Green">Green</label>
                                                 </li>
 
                                             <li class="toys__items">
-                                                    <input class="toys__input" type="Checkbox" id="white" value="white" name="color_4">   
-                                                    <label class="toys__label toys__label--color" for="white">White</label>
+                                                    <input class="toys__input" type="Checkbox" id="white" value="white" name="color_4" >   
+                                                    <label class="toys__label toys__label--color" for="white" title="Green">White</label>
                                                 </li>
 
                                         </ul>
@@ -84,12 +86,12 @@
 
                                         <li class="toys__delivery-items">
                                             <input class="toys__input toys__input--hidden " type="radio" id="Free-shipping" value="Free-shipping" name="shipping">
-                                            <label class="toys__label toys__label--delivery" for="Free-shipping">Free shipping</label>
+                                            <label class="toys__label toys__label--delivery" for="Free-shipping" title="Free-shipping">Free shipping</label>
                                         </li>
 
                                         <li class="toys__delivery-items">
                                             <input class="toys__input toys__input--hidden " type="radio" id="Fast-shipping" value="Fast-shipping" name="shipping" checked>
-                                            <label class=" toys__label toys__label--delivery" for="Fast-shipping">Fast shipping</label>
+                                            <label class=" toys__label toys__label--delivery" for="Fast-shipping" title="Fast-shipping">Fast shipping</label>
                                         </li>
                                         
                                     </ul>
@@ -101,34 +103,35 @@
                                         
                                             <li class="toys__amount-items">
                                                 <input class="toys__input toys__input--amount" type="radio" id="radio_1" value="0-5" name="numer"  checked>
-                                                <label class="toys__label toys__label--amount" for="radio_1">0-5</label>
+                                                <label class="toys__label toys__label--amount" for="radio_1" title="accept 0-5">0-5</label>
                                             </li>
                                                
                                             <li class="toys__amount-items">
                                                 <input class="toys__input toys__input--amount" type="radio" id="radio_2" value="10-20" name="numer">
-                                                <label class="toys__label toys__label--amount" for="radio_2">10-20</label>
+                                                <label class="toys__label toys__label--amount" for="radio_2" title="accept 10-20">10-20</label>
                                             </li>
                                              
                                             <li class="toys__amount-items">
                                                <input class="toys__input toys__input--amount" type="radio" id="radio_3" value="20-50" name="numer">
-                                             <label class="toys__label toys__label--amount" for="radio_3">20-50</label>
+                                             <label class="toys__label toys__label--amount" for="radio_3" title="accept 20-50">20-50</label>
                                             </li> 
                                             
                                          </ul>
                                  </fieldset>
                   
                    <div class="toys__form-btn">
-                      <button class="toys__button" type="submit">Apply</button>
+                      <button class="toys__button" type="submit" title="To accept">Apply</button>
                     </div>
                 
                
             </form>
            </div>
            
+
             <div class="toys__catalog">
                
                 <ul class="toys__list">
-                  
+                 <li class="toys__card-item">
                   @@include("toys-card/index.html", {
                     "more": " Learn more",
                     "text": "SHARKY BEAN BAG CHAIR COVER",
@@ -139,12 +142,14 @@
                     "imgTablet2x": "toys1-tablet-2x.png",
                     "imgMobile": "toys1-mobile.png",
                     "imgMobile2x": "toys1-mobile-2x.png",
+                    "imgMobile-min": "toys1-mobile-min.png",
+                    "imgMobile-min-2x": "toys1-mobile-min-2x.png",
                     "alt": "Sharky",
                     "link": "#"
                     })
+                  </li>
                   
-                  
-                  
+                  <li class="toys__card-item">
                    @@include("toys-card/index.html", {
                     "more": " Learn more",
                     "text": "BRASS DECO FRAMES",
@@ -155,11 +160,14 @@
                     "imgTablet2x": "toys2-tablet-2x.png",
                     "imgMobile": "toys2-mobile.png",
                     "imgMobile2x": "toys2-mobile-2x.png",
+                    "imgMobile-min": "toys2-mobile-min.png",
+                    "imgMobile-min-2x": "toys2-mobile-min-2x.png",
                     "alt": "Brass",
                     "link": "#"
                     })
+                    </li>
 
-                  
+                  <li class="toys__card-item">
                    @@include("toys-card/index.html", {
                     "more": " Learn more",
                     "text": "CIBO FULL APRON",
@@ -170,14 +178,17 @@
                     "imgTablet2x": "toys3-tablet-2x.png",
                     "imgMobile": "toys3-mobile.png",
                     "imgMobile2x": "toys3-mobile-2x.png",
+                    "imgMobile-min": "toys3-mobile-min.png",
+                    "imgMobile-min-2x": "toys3-mobile-min-2x.png",
                     "alt": "Cibo",
                     "link": "#"
                     })
+                    </li>
 
-                 
+                 <li class="toys__card-item">
                   @@include("toys-card/index.html", {
                     "more": " Learn more",
-                    "text": "GATCHA GATCHA GUMBALL MACHINE",
+                    "text": "SHARKY BEAN BAG CHAIR COVER",
                     "price": "56.00",
                     "img": "toys4.png",
                     "img2x": "toys4-2x.png",
@@ -185,15 +196,18 @@
                     "imgTablet2x": "toys4-tablet-2x.png",
                     "imgMobile": "toys4-mobile.jpg",
                     "imgMobile2x": "toys4-mobile-2x.png",
+                    "imgMobile-min": "toys4-mobile-min.png",
+                    "imgMobile-min-2x": "toys4-mobile-min-2x.png",
                     "alt": "Gatcha",
                     "link": "#"
                     })
+                    </li>
 
 
-
+                <li class="toys__card-item">
                   @@include("toys-card/index.html", {
                     "more": " Learn more",
-                    "text": "CHRISTMAS ADVENT SCENTED CANDLE",
+                    "text": "BRASS DECO FRAMES",
                     "price": "29.00",
                     "img": "toys5.png",
                     "img2x": "toys5-2x.png",
@@ -201,11 +215,14 @@
                     "imgTablet2x": "toys5-tablet-2x.png",
                     "imgMobile": "toys5-mobile.png",
                     "imgMobile2x": "toys5-mobile-2x.png",
+                    "imgMobile-min": "toys5-mobile-min.png",
+                    "imgMobile-min-2x": "toys5-mobile-min-2x.png",
                     "alt": "Christmas",
                     "link": "#"
                     })
+                    </li>
                     
-
+               <li class="toys__card-item">
                  @@include("toys-card/index.html", {
                     "more": " Learn more",
                     "text": "TANGLE SPINNING TEA LIGHT",
@@ -216,17 +233,20 @@
                     "imgTablet2x": "toys6-tablet-2x.png",
                     "imgMobile": "toys6-mobile.png",
                     "imgMobile2x": "toys6-mobile-2x.png",
+                    "imgMobile-min": "toys6-mobile-min.png",
+                    "imgMobile-min-2x": "toys6-mobile-min-2x.png",
                     "alt": "Tangle",
                     "link": "#"
                     })
-                   
+                   </li>
                  
                     
                 </ul> 
                 
                 <div class="toys__select">
+
              
-            <button class="toys__select-btn toys__select-btn--first">
+            <button class="toys__select-btn toys__select-btn--first" title="Go to left">
                 <svg class="toys__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
                 <path class="toys__select-path" d="M 16 2 L 3 15 L 16 28" stroke="#E4E1E1" stroke-width="4"/>
                 </svg>
@@ -252,7 +272,7 @@
                       
                  </ul>
                 
-            <button class="toys__select-btn toys__select-btn--second">
+            <button class="toys__select-btn toys__select-btn--second" title="Go to Right">
                <svg class="toys__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
                 <path class="toys__select-path" d="M 2 2 L 15 15 L 2 28" stroke="#E4E1E1" stroke-width="4"/>
                </svg>

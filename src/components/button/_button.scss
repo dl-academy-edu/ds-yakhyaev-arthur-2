@@ -13,6 +13,11 @@
     border: 0;
     outline: 0;
     transition: background-color .6s ease .2s;
+	
+	&:focus  {
+      outline: 3px solid #C29974;
+    }
+	
      
  
 &:hover{
@@ -24,7 +29,11 @@
     background-color: #CFAF91;
   }
     
- 
+ @media screen and (max-width:300px){
+		font-size: 14px;
+        line-height: 14px;
+		padding: 9px 9px;
+	}
      
     
     

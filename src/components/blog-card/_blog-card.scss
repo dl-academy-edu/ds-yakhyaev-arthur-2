@@ -4,23 +4,56 @@
    .blog__card {
         width: 380px;
         margin-left: 20px;
+	   
+	   
+	   @media screen and (max-width: 1397px) {
+        margin-left: 14px;
+      }
        
-    @media screen and (max-width: 1389px) {
+    @media screen and (max-width: 1380px) {
+		 width: 314px;
          margin: 0;
+         margin-right: 20px;
+       }
+	    @media screen and (max-width: 1121px) {
+		 width: 280px;
+         margin: 0;
+         margin-right: 20px;
        }
        
     @media screen and (max-width: $md) {
-         width: 314px;
-         margin: 0;
+         
+        margin: 0;
+	&:nth-child(2){
+         margin-right: 14px;
+       } 
      
     &:nth-child(3){
-         margin-right: 20px;
+         margin-right: 14px;
+       }
+		&:nth-child(4){
+         margin-right: 14px;
        } 
-        
+   
     &:nth-child(5){
-       margin-right: 20px;
+       margin-right: 14px;
        } 
  }
+    @media screen and (max-width: 900px) {
+        flex: auto;
+        
+      }
+    @media screen and (max-width: 414px) {
+        width: 311px;
+           margin-left: 20px;
+        
+      }
+    @media screen and (max-width: 390px) {
+        
+           margin-left: 0;
+        
+      }
+       
     @media screen and (max-width: $xs) {
         width: 335px;
       }
@@ -28,11 +61,23 @@
         
     &:first-child{
         margin:0;
+		
+        
+    @media screen and (max-width: 1380px) {
+        margin-right: 20px;
+      }
         
     @media screen and (max-width: $md) {
         margin-right: 20px;
       }
-   
+    @media screen and (max-width: 414px) {
+        margin-left: 20px;
+      }
+     @media screen and (max-width: 390px) {
+        margin-left: 0;
+      }
+//   
+       
     }
        
        

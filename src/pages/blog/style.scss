@@ -17,6 +17,9 @@
     @media screen and (max-width: $sm) {
         padding: 0 20px;
     }
+          @media screen and (max-width: 280px) {
+        padding: 0 ;
+    }
          
     }
         
@@ -32,8 +35,12 @@
                 justify-content: space-between;
         transition: opacity .1s ease-in .1s;
         margin-bottom: -12px;
-         @media screen and (max-width: $sm) {
-    padding: 0 20px;
+         
+  @media screen and (max-width: $sm) {
+        padding: 0 20px;
+         }
+   @media screen and (max-width: 300px) {
+       padding: 0 ;
          }
          
          
@@ -47,7 +54,10 @@
         cursor: pointer;
         outline: 0;
         transition: opacity ease-in .4s;
-       
+		
+     &:focus{
+        outline: 1px solid #C29974;
+    }
         
         &--first{
             padding: 0;
@@ -112,6 +122,10 @@
         transition: opacity .5s ease .2s;
         outline: 0;
         cursor: pointer;
+		
+	&:focus{
+       outline: 1px solid #C29974;
+    }
         
     @media screen and (max-width: $sm) {
         font-weight: bold;

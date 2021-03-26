@@ -17,11 +17,8 @@
     <main class="main">
     
        
-        <audio controls src="/static/sound.ogg" >
-            <source src="/static/sound.ogg" type="audio/ogg;codecs=vorbis">
-            <source src="/static/sound.mp3" type="audio/mpeg">
-            Тег audio не поддерживается вашим браузером. 
-            </audio>
+
+        
        
 
        
@@ -33,16 +30,16 @@
                        <ul class="intro__nav">
                           <li class="intro__nav-number">01</li>
                             <li class="intro__nav-item">
-                                <button class="intro__nav-button intro__nav-button--active" type="button" name="button" value="1">1</button>
+                                <button class="intro__nav-button intro__nav-button--active" type="button" name="button" value="1" title="button-1">1</button>
                             </li>
                             <li class="intro__nav-item">
-                                <button class="intro__nav-button" type="button" name="button" value="1">2</button>
+                                <button class="intro__nav-button" type="button" name="button" value="1" title="button-2">2</button>
                             </li>
                             <li class="intro__nav-item">
-                                <button class="intro__nav-button" type="button" name="button" value="1">3</button>
+                                <button class="intro__nav-button" type="button" name="button" value="1" title="button-3">3</button>
                             </li>
                             <li class="intro__nav-item">
-                                <button class="intro__nav-button" type="button" name="button" value="1">4</button>
+                                <button class="intro__nav-button" type="button" name="button" value="1" title="button-4">4</button>
                             </li>
                         </ul>
                         
@@ -60,9 +57,15 @@
                             })
                         </div>
                           <picture class="intro__logo"> 
-                              <source class="intro__logo-inner" srcset="/static/images/monster__mobile.png, srcset=/static/images/monster__mobile-x2.png " media="(max-width:740px)" >
-                               <source class="intro__logo-inner" srcset="/static/images/monster__tablet.png, srcset=/static/images/monster__tablet-x2.png " media="(max-width:1023px)">
-                                <img class="intro__logo-inner" src="/static/images/monster.png" srcset="/static/images/monster.png, /static/images/monster-x2.png 2x" srcset="" alt="monster"> 
+                             <source class="intro__logo-inner" srcset="/static/images/monster__mobile-min.png 220w, /static/images/monster__mobile-min-x2.png 440w" media="(max-width:330px)" sizes="220px" >
+                             
+                              <source class="intro__logo-inner" srcset="/static/images/monster__mobile.png 292w, /static/images/monster__mobile-x2.png  584w" media="(max-width:740px)" sizes="292px">
+                              
+                              <source class="intro__logo-inner" srcset="/static/images/monster__tablet.png 385w, /static/images/monster__tablet-x2.png  770w" media="(max-width:1023px)" sizes="385px">
+                              
+                               <source class="intro__logo-inner" srcset="/static/images/monster__tablet.png 385w, /static/images/monster__tablet-x2.png  770w" media="(max-width:1330px)" sizes="385px">
+                               
+                              <img class="intro__logo-inner" src="/static/images/monster.png" srcset="/static/images/monster.png, /static/images/monster-x2.png 2x" alt="monster" > 
                              </picture>
                  
                 </div>
@@ -84,19 +87,19 @@
                       <ul class="services__block">
 
                              <li class="services__block-item services__block-item--first">
-                               <a class="services__block-link" href="#">Apparel<br>kids</a>
+                               <a class="services__block-link" href="#" title="Apparel kids">Apparel<br>kids</a>
                              </li>
 
                              <li class="services__block-item services__block-item--second">
-                               <a class="services__block-link" href="#">Holiday<br>shop</a>
+                               <a class="services__block-link" href="#" title="Holiday shop">Holiday<br>shop</a>
                              </li>
 
                              <li class="services__block-item services__block-item--third">
-                               <a class="services__block-link" href="pages/toys">Toys</a>
+                               <a class="services__block-link" href="pages/toys" title="Toys">Toys</a>
                              </li>
 
                              <li class="services__block-item services__block-item--fourth">
-                               <a class="services__block-link" href="#">Accessories</a>
+                               <a class="services__block-link" href="#" title="Accessories">Accessories</a>
                              </li>
 
                      </ul>
@@ -105,13 +108,13 @@
                     
                     <div class="services__select">
                        
-                        <button class="services__btn" type="button">
+                        <button class="services__btn" type="button" title="select-left" >
                             <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path d="M25 5L12 18L25 31" stroke="#1E0606" stroke-width="4"/>
                                   </svg>
                             </button>
                             
-                        <button class="services__btn" type="button">
+                        <button class="services__btn" type="button" title="select-right">
                              <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M12 5L25 18L12 31" stroke="#1E0606" stroke-width="4"/>
                                    </svg>
@@ -133,10 +136,15 @@
                <div class="delivery__wrapper">
                
                 <picture class="delivery__logo">
-                     <source class="delivery__logo-img" srcset="/static/images/deliver__sm.jpg, srcset=/static/images/deliver__sm-x2.jpg" media="(max-width:740px)" >
-                     <source class="delivery__logo-img" srcset="/static/images/deliver__md.jpg, srcset=/static/images/deliver__md-x2.jpg" media="(max-width:1023px)">
-                     <img class="delivery__logo-img" src="/static/images/deliver.jpg"
-                        srcset="/static/images/deliver.jpg,  srcset=/static/images/deliver-x2.jpg "  alt="deliver-logo" >
+                   <source class="delivery__logo-img" srcset="/static/images/deliver__sm-min2.jpg 240w, /static/images/deliver__sm-min2-x2.jpg 480w" media="(max-width:300px)" sizes="240px">
+                   
+                    <source class="delivery__logo-img" srcset="/static/images/deliver__sm-min.jpg 280w, /static/images/deliver__sm-min-x2.jpg 580w" media="(max-width:330px)" sizes="280px">
+                    
+                     <source class="delivery__logo-img" srcset="/static/images/deliver__sm.jpg 335w, /static/images/deliver__sm-x2.jpg 670w" media="(max-width:740px)" sizes="335px">
+                     
+                     <source class="delivery__logo-img" srcset="/static/images/deliver__md.jpg 258w, /static/images/deliver__md-x2.jpg 516w" media="(max-width:1023px)" sizes="258px">
+                     
+                     <img class="delivery__logo-img" src="/static/images/deliver.jpg" srcset="/static/images/deliver.jpg,  /static/images/deliver-x2.jpg 2x"  alt="deliver-logo"  >
                     </picture>
                         
                 <div class="delivery__content">
@@ -146,15 +154,15 @@
                 <ul class="delivery__content-category">
                        
                         <li class="delivery__content-item ">
-                          <button class="delivery__content-button delivery__content-button--active" type="button" name="button">Delivery</button>
+                          <button class="delivery__content-button delivery__content-button--active" type="button" name="button" title="Go to Delivery">Delivery</button>
                            </li>
                         
                         <li class="delivery__content-item">
-                           <button class="delivery__content-button" type="button" name="button">Guarantee</button>
+                           <button class="delivery__content-button" type="button" name="button" title="Go to Guarantee">Guarantee</button>
                            </li>
                             
                         <li class="delivery__content-item">
-                           <button class="delivery__content-button" type="button" name="button">Credit</button>
+                           <button class="delivery__content-button" type="button" name="button" title="Go to Credit">Credit</button>
                            </li>
                     </ul>
                     
@@ -186,6 +194,7 @@
                 <li class="partners__list-item">
                       
                        <picture >
+                        <source class="parters__list-img" srcset="/static/images/partners/partners1-tablet.png, /static/images/partners/partners1-tablet-x2.png 2x" media="(max-width:330px)">
                        
                         <source class="parters__list-img" srcset="/static/images/partners/partners1-mobile.png, /static/images/partners/partners1-mobile-x2.png 2x" media="(max-width:740px)">
 
@@ -197,18 +206,23 @@
                       
                       
                 <li class="partners__list-item">
+         
                         <picture >
+                        <source class="parters__list-img" srcset="/static/images/partners/partners2-tablet.png, /static/images/partners/partners2-tablet-x2.png 2x" media="(max-width:330px)">
+                        
                          <source class="parters__list-img" srcset="/static/images/partners/partners2-mobile.png, /static/images/partners/partners2-mobile-x2.png 2x" media="(max-width:740px)">
 
                          <source class="parters__list-img" srcset="/static/images/partners/partners2-tablet.png, /static/images/partners/partners2-tablet-x2.png 2x" media="(max-width:1023px)">
 
-                          <img class="parters__list-img" class="parters__list-img" src="/static/images/partners/partners2.png" srcset="/static/images/partners/partners2.png, /static/images/partners/partners2-x2.png 2x" alt="partners-logo2" >
+                          <img class="parters__list-img" src="/static/images/partners/partners2.png" srcset="/static/images/partners/partners2.png, /static/images/partners/partners2-x2.png 2x" alt="partners-logo2" >
                           </picture>
                      </li>
                       
                 <li class="partners__list-item">
                         <picture >
-                        <source  class="parters__list-img"srcset="/static/images/partners/partners3-mobile.png, /static/images/partners/partners3-mobile-x2.png 2x" media="(max-width:740px)">
+                        <source class="parters__list-img" srcset="/static/images/partners/partners3-tablet.png, /static/images/partners/partners3-tablet-x2.png 2x" media="(max-width:330px)">
+                        
+                        <source  class="parters__list-img" srcset="/static/images/partners/partners3-mobile.png, /static/images/partners/partners3-mobile-x2.png 2x" media="(max-width:740px)">
 
                          <source class="parters__list-img" srcset="/static/images/partners/partners3-tablet.png, /static/images/partners/partners3-tablet-x2.png 2x" media="(max-width:1023px)">
 
@@ -218,9 +232,11 @@
                      
                 <li  class="partners__list-item"> 
                     <picture >
+                       <source class="parters__list-img" srcset="/static/images/partners/partners4-tablet.png, /static/images/partners/partners4-tablet-x2.png 2x" media="(max-width:330px)">
+                       
                         <source class="parters__list-img" srcset="/static/images/partners/partners4-mobile.png, /static/images/partners/partners4-mobile-x2.png 2x" media="(max-width:740px)">
 
-                         <source  class="parters__list-img"srcset="/static/images/partners/partners4-tablet.png, /static/images/partners/partners4-tablet-x2.png 2x" media="(max-width:1023px)">
+                         <source  class="parters__list-img" srcset="/static/images/partners/partners4-tablet.png, /static/images/partners/partners4-tablet-x2.png 2x" media="(max-width:1023px)">
 
                         <img class="partners__list-img" src="/static/images/partners/partners4.png" srcset="/static/images/partners/partners4.png, /static/images/partners/partners4-x2.png 2x" alt="partners-logo4" > 
                         </picture>
@@ -250,10 +266,10 @@
                     <h2 class="map__contacts-title">Contacts</h2>
                       <p class="map__contacts-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                       
-             <!--<iframe class="map__contacts-maps" src="https://yandex.ru/map-widget/v1/-/CCUQiTbolB" width="560" height="400">                        </iframe>-->
-                
-                 <iframe class="map__contacts-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5355779825127!2d49.28813631581844!3d53.51249116995437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41687981eb77e79b%3A0xc6236db15e1d074e!2z0L_RgC4g0KHRgtC10L_QsNC90LAg0KDQsNC30LjQvdCwLCA0NCwg0KLQvtC70YzRj9GC0YLQuCwg0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQuy4sIDQ0NTAyNw!5e0!3m2!1sru!2sru!4v1615652718510!5m2!1sru!2sru" width="560" height="400"></iframe>
+             
                   
+                 <iframe title="Googl-maps " class="map__contacts-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5355779825127!2d49.28813631581844!3d53.51249116995437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41687981eb77e79b%3A0xc6236db15e1d074e!2z0L_RgC4g0KHRgtC10L_QsNC90LAg0KDQsNC30LjQvdCwLCA0NCwg0KLQvtC70YzRj9GC0YLQuCwg0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQuy4sIDQ0NTAyNw!5e0!3m2!1sru!2sru!4v1615652718510!5m2!1sru!2sru" width="560" height="400"></iframe>
+                 
            </div> 
             
                 
@@ -301,7 +317,7 @@
                                 </div>
 
                             <div class="popup__information">
-                                <input class="popup__input popup__input--hidden" id="check-consent" type="checkbox"name="check-consent" required>
+                                <input class="popup__input popup__input--hidden" id="check-consent" type="checkbox" name="check-consent" required>
                                 <label class="popup__text" for="check-consent">By clicking on the button, you consent to the processing of your personal data </label>
                             </div>
                             @@include("button/index.html", {
