@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link href="/common.css" rel="stylesheet" />
@@ -15,176 +16,182 @@
    
     <body>
      @@include('header/index.html')
+          
            <div class="container">
-               
-                <h1 class="navigation__title">Grid</h1>
-                
-                  <div class="navigation__select"> 
-                       <a class="link" href="/" title="Go to Home">Home</a>
-                        <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
-                         <a class="navigation__way-link" href="#">Grid</a> 
+               <h1 class="navigation__title">Grid</h1>
+                     <div class="navigation__select"> 
+                         <a class="link" href="/"  aria-label="Go to Home" title="Home">Home</a>
+                         <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
+                         <a class="navigation__way-link" href="#"  title="Grid">Grid</a> 
                      </div>
-                  </div>
+            </div>
                   
-    <main class="main">
-       
-        <section class="grid">  
+         <main class="main">
+              <section class="grid">  
              
              
-              <div class="grid__one one">
-                 <div class="one__inner">
-                      <h2 class="one__title">IPHONE 6S</h2>
-                      <p class="one__description">3D Touch. 12MP photos. 4K video. One powerful phone</p>
-                      <a  class="one__link" href="" aria-label="Go to Learn more" title="Learn more">Learn more or visit
-                        an Apple Store today></a>
-                  </div>
-                  
-                <div class="one__item">
-                     
-                      <picture class="one__img">
-                      
-                      <source  srcset="/static/images/grid/grid1-mobile.png 272w, /static/images/grid/grid1-mobile-2x.png 544w" media="(max-width:740px)" sizes="272px">
-                      
-                      <source  srcset="/static/images/grid/grid1-tablet.png 249w, /static/images/grid/grid1-tablet-2x.png 498w" media="(max-width:1023px)" sizes="249px">
-                      
-                       <img src="/static/images/grid/grid1.png" srcset="/static/images/grid/grid1.png , /static/images/grid/grid1-2x.png 2x" alt="IPHONE">   
-                      </picture>
-                      
-                </div>
-            </div>  
-                
-                
-                 <div class="grid__two two">
-                     <div class="two__content">
-                         <span class="two__text">Learn More</span>
-                         <p class="two__title">How to Use Rotary Evaporator in Chemical Labs</p>
-                         <a  class="two__link" href="#" aria-label="Go to Download now" title="Download now">Download now</a>
-                     </div>
-                 </div>  
-                  
-                  <div class="grid__three three">
-                      <div class="three__content">
-                        <picture class="three__img">
-                         <source  srcset="/static/images/grid/grid3-mobile.png 314w, /static/images/grid/grid3-mobile-2x.png 628w" media="(max-width:740px)" sizes="314px">
-                      
-                          <source  srcset="/static/images/grid/grid3-tablet.png 314w, /static/images/grid/grid3-tablet-2x.png 628w" media="(max-width:1023px)" sizes="314px">
-                      
-                         <img src="/static/images/grid/grid3.png" srcset="/static/images/grid/grid3.png, /static/images/grid/grid3-2x.png 2x" alt="IPHONE">   
-                        </picture>
-                          
-                       <p class="three__title">Our Brand New Keyboard</p>
-                       <a class="three__link" href="/" aria-label="Go to Learn" title="Learn">LEARN</a>
-                      </div>
-                  </div>
-                  
-                <div class="grid__four four">
-                    <div class="four__content">
-                        <div class="four__inner">
-                            <span class="four__text">IMAC.RETINA</span>
-                            <p class="four__title">Hardly a month passes these days where</p>
-                        </div>
-                        <div class="four__inner-2">
-                            <p class="four__description">Apple may be experimenting in the virtual reality space. The
-                                company has been granted a patent for a head-mounted virtual reality device that would use
-                                the iPhone screen as the display.</p>
-                            <a class="four__link" href="/" aria-label="Go to Download now" title="Download now">DOWNLOAD NOW
-                                ›</a>
-                        </div>
-                    
-                 <div class="four__inner-3">
-                        <picture class="four__img">
-                        
-                        <source  srcset="/static/images/grid/grid4-mobile-min.png 280w, /static/images/grid/grid4-mobile-min-2x.png 560w" media="(max-width:360px)" sizes="280px">
-                        
-                         <source  srcset="/static/images/grid/grid4-mobile.png 375w, /static/images/grid/grid4-mobile-2x.png 750w" media="(max-width:740px)" sizes="375px">
-                      
-                          <source  srcset="/static/images/grid/grid4-tablet.png 420w, /static/images/grid/grid4-tablet-2x.png 840w" media="(max-width:1023px)" sizes="420px">
-                      
-                         <img src="/static/images/grid/grid4.png" srcset="/static/images/grid/grid4.png , /static/images/grid/grid4-2x.png " alt="IPHONE">   
-                        </picture>
+                      <div class="grid__one one">
+                             <div class="one__inner">
+                                  <h2 class="one__title">IPHONE 6S</h2>
+                                  <p class="one__description">3D Touch. 12MP photos. 4K video. One powerful phone</p>
+                                  <a  class="one__link" href="" aria-label="Go to Learn more" title="Learn more">Learn more or visit
+                                    an Apple Store today></a>
+                             </div>
 
-                    </div>
-                </div>
-            </div>
-                 
-             <div class="grid__five five">
-                <div class="five__content">
-                    <div class="five__block">
-                        <span class="five__text">POPULAR</span>
+                             <div class="one__item">
+                                <picture >
+                                    <source  srcset="/static/images/grid/grid1-mobile.png 272w, /static/images/grid/grid1-mobile-2x.png 544w" media="(max-width:740px)" sizes="272px">
+
+                                    <source  srcset="/static/images/grid/grid1-tablet.png 249w, /static/images/grid/grid1-tablet-2x.png 498w" media="(max-width:1023px)" sizes="249px">
+
+                                    <img class="one__img" src="/static/images/grid/grid1.png" srcset="/static/images/grid/grid1.png , /static/images/grid/grid1-2x.png 2x" alt="IPHONE">   
+                                </picture>
+
+                             </div>
+                       </div>  
+
+
+                       <div class="grid__two two">
+                             <div class="two__content">
+                                   <span class="two__text">Learn More</span>
+                                   <p class="two__title">How to Use Rotary Evaporator in Chemical Labs</p>
+                                   <a  class="two__link" href="#" aria-label="Go to Download now" title="Download now">Download now</a>
+                             </div>
+                       </div>  
+
+                      
+                        <div class="grid__three three">
+                             <div class="three__content">
+                                 <picture >
+                                     <source  srcset="/static/images/grid/grid3-mobile.png 314w, /static/images/grid/grid3-mobile-2x.png 628w" media="(max-width:740px)" sizes="314px">
+
+                                     <source  srcset="/static/images/grid/grid3-tablet.png 314w, /static/images/grid/grid3-tablet-2x.png 628w" media="(max-width:1023px)" sizes="314px">
+
+                                     <img class="three__img" src="/static/images/grid/grid3.png" srcset="/static/images/grid/grid3.png, /static/images/grid/grid3-2x.png 2x" alt="IPHONE">   
+                                 </picture>
+
+                                     <p class="three__title">Our Brand New Keyboard</p>
+                                     <a class="three__link" href="/" aria-label="Go to Learn" title="Learn">LEARN</a>
+                             </div>
+                         </div>
+
+                           
+                         <div class="grid__four four">
+                            <div class="four__content">
+                                 <div class="four__inner">
+                                     <span class="four__text">IMAC.RETINA</span>
+                                     <p class="four__title">Hardly a month passes these days where</p>
+                                 </div>
+                                 
+                                 <div class="four__inner-2">
+                                     <p class="four__description">Apple may be experimenting in the virtual reality space. The
+                                            company has been granted a patent for a head-mounted virtual reality device that would use
+                                            the iPhone screen as the display.</p>
+                                     <a class="four__link" href="/" aria-label="Go to Download now" title="Download now">DOWNLOAD NOW›</a>
+                                 </div>
+
+                             <div class="four__inner-3">
+                                 <picture >
+                                     <source  srcset="/static/images/grid/grid4-mobile-min.png 280w, /static/images/grid/grid4-mobile-min-2x.png 560w" media="(max-width:360px)" sizes="280px">
+
+                                     <source  srcset="/static/images/grid/grid4-mobile.png 375w, /static/images/grid/grid4-mobile-2x.png 750w" media="(max-width:740px)" sizes="375px">
+
+                                     <source  srcset="/static/images/grid/grid4-tablet.png 420w, /static/images/grid/grid4-tablet-2x.png 840w" media="(max-width:1023px)" sizes="420px">
+
+                                     <img class="four__img"src="/static/images/grid/grid4.png" srcset="/static/images/grid/grid4.png , /static/images/grid/grid4-2x.png " alt="IPHONE">   
+                                 </picture>
+
+                             </div>
+                           </div>
+                         </div>
+
                         
-                        <picture class="five__img">
-                         <source  srcset="/static/images/grid/grid5-mobile.png 180w, /static/images/grid/grid5-mobile-2x.png 360w" media="(max-width:740px)" sizes="180px">
-                      
-                          <source  srcset="/static/images/grid/grid5-tablet.png 180w, /static/images/grid/grid5-tablet-2x.png 360w" media="(max-width:1023px)" sizes="180px">
-                      
-                         <img src="/static/images/grid/grid5.png" srcset="/static/images/grid/grid5.png, /static/images/grid/grid5-2x.png 2x" alt="IPHONE">   
-                        </picture>
                         
-                        <span class="five__subtext">MEET</span>
-                    </div>
-                    <p class="five__title">iCloud</p>
-                    <p class="five__description">With iCloud, you always have the latest versions of your most important
-                        things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
-                    <a class="five__link" href="/" aria-label="Go to Learn more" title="Learn more">LEARN MORE</a>
-                </div>
-            </div>
-                 
-            <div class="grid__six six">
-                <p class="six__text">BEST CHOICE</p>
-                <p class="six__title">Much MuchBetter Experience</p>
-                
-                <picture class="six__img">
-                          <source  srcset="/static/images/grid/grid6-mobile-min.png 280w, /static/images/grid/grid6-mobile-min-2x.png 560w" media="(max-width:360px)" sizes="280px">
-                          
-                         <source  srcset="/static/images/grid/grid6-mobile.png 375w, /static/images/grid/grid6-mobile-2x.png 750w" media="(max-width:1300px)" sizes="375px">
-                      
-                          <source  srcset="/static/images/grid/grid6-tablet.png 384w, /static/images/grid/grid6-tablet-2x.png 768w" media="(max-width:1300px)" sizes="384px">
-                      
-                         <img src="/static/images/grid/grid6.png" srcset="/static/images/grid/grid6.png, /static/images/grid/grid6-2x.png 2x" alt="IPHONE">   
-                </picture>
-            </div>
-                  
-               <div class="grid__seven seven">
-                <div class="seven__content">
-                  <picture class="six__img">
-                         <source  srcset="/static/images/grid/grid7-mobile.png 303w, /static/images/grid/grid7-mobile-2x.png 606w" media="(max-width:740px)" sizes="303px">
-                      
-                          <source  srcset="/static/images/grid/grid7-tablet.png 303w, /static/images/grid/grid7-tablet-2x.png 606w" media="(max-width:1023px)" sizes="303px">
-                      
-                         <img src="/static/images/grid/grid7.png" srcset="/static/images/grid/grid7.png , /static/images/grid/grid7-2x.png 2x" alt="IPHONE">   
-                   </picture>
-                    <p class="seven__title">Games ourpasion</p>
-                    <a class="seven__link" href="/" aria-label="Go to Learn" title="Learn">LEARN ›</a>
-                </div>
-            </div>   
-                  
-                <div class="grid__eight eight">
-                <div class="eight__content">
-                    <picture class="six__img">
-                         <source  srcset="/static/images/grid/grid8-mobile.png 59w, /static/images/grid/grid8-mobile-2x.png 118w" media="(max-width:740px)" sizes="59px">
-                      
-                          <source  srcset="/static/images/grid/grid8-tablet.png 59w, /static/images/grid/grid8-tablet-2x.png 118w" media="(max-width:1023px)" sizes="59px">
-                      
-                         <img src="/static/images/grid/grid8.png" srcset="/static/images/grid/grid8.png , /static/images/grid/grid8-2x.png 2x" alt="IPHONE">   
-                   </picture>
-                    <a class="eight__link" href="/" aria-label="Go to Follow me" title="Follow me">Follow me ></a>
-                </div>
-            </div>   
-                  
-          <div class="grid__nine nine">
-                <picture class="six__img">
-                        <source  srcset="/static/images/grid/grid9-mobile-min.png 280w, /static/images/grid/grid9-mobile-min-2x.png 560w" media="(max-width:360px)" sizes="280px">
-                        
-                         <source  srcset="/static/images/grid/grid9-mobile.png 375w, /static/images/grid/grid9-mobile-2x.png 750w" media="(max-width:740px)" sizes="375px">
-                      
-                          <source  srcset="/static/images/grid/grid9-tablet.png 271w, /static/images/grid/grid9-tablet-2x.png 542w" media="(max-width:1023px)" sizes="271px">
-                      
-                         <img src="/static/images/grid/grid9.png" srcset="/static/images/grid/grid9.png , /static/images/grid/grid9-2x.png 2x" alt="IPHONE">   
-                   </picture>
-                <span class="nine__title">More than just a display, it’s a vision</span>
-            </div> 
-                  
-         </section>
+                         <div class="grid__five five">
+                            <div class="five__content">
+                                <div class="five__block">
+                                     <span class="five__text">POPULAR</span>
+
+                                 <picture >
+                                     <source  srcset="/static/images/grid/grid5-mobile.png 180w, /static/images/grid/grid5-mobile-2x.png 360w" media="(max-width:740px)" sizes="180px">
+
+                                     <source  srcset="/static/images/grid/grid5-tablet.png 180w, /static/images/grid/grid5-tablet-2x.png 360w" media="(max-width:1023px)" sizes="180px">
+
+                                     <img class="five__img" src="/static/images/grid/grid5.png" srcset="/static/images/grid/grid5.png, /static/images/grid/grid5-2x.png 2x" alt="IPHONE">   
+                                 </picture>
+
+                                     <span class="five__subtext">MEET</span>
+                                </div>
+                                
+                                     <p class="five__title">iCloud</p>
+                                     <p class="five__description">With iCloud, you always have the latest versions of your most important
+                                      things — like documents, apps, notes, and contacts — on whatever device you’re using.</p>
+                                     <a class="five__link" href="/" aria-label="Go to Learn more" title="Learn more">LEARN MORE</a>
+                            </div>
+                          </div>
+
+                         
+                          <div class="grid__six six">
+                                    <p class="six__text">BEST CHOICE</p>
+                                    <p class="six__title">Much MuchBetter Experience</p>
+
+                                 <picture >
+                                      <source  srcset="/static/images/grid/grid6-mobile-min.png 280w, /static/images/grid/grid6-mobile-min-2x.png 560w" media="(max-width:360px)" sizes="280px">
+
+                                      <source  srcset="/static/images/grid/grid6-mobile.png 375w, /static/images/grid/grid6-mobile-2x.png 750w" media="(max-width:1300px)" sizes="375px">
+
+                                      <source  srcset="/static/images/grid/grid6-tablet.png 384w, /static/images/grid/grid6-tablet-2x.png 768w" media="(max-width:1300px)" sizes="384px">
+
+                                      <img class="six__img"src="/static/images/grid/grid6.png" srcset="/static/images/grid/grid6.png, /static/images/grid/grid6-2x.png 2x" alt="IPHONE">   
+                                </picture>
+                          </div>
+
+                         
+                          <div class="grid__seven seven">
+                            <div class="seven__content">
+                              <picture>
+                                     <source  srcset="/static/images/grid/grid7-mobile.png 303w, /static/images/grid/grid7-mobile-2x.png 606w" media="(max-width:740px)" sizes="303px">
+
+                                      <source  srcset="/static/images/grid/grid7-tablet.png 303w, /static/images/grid/grid7-tablet-2x.png 606w" media="(max-width:1023px)" sizes="303px">
+
+                                     <img  class="six__img" src="/static/images/grid/grid7.png" srcset="/static/images/grid/grid7.png , /static/images/grid/grid7-2x.png 2x" alt="IPHONE">   
+                               </picture>
+                                     <p class="seven__title">Games ourpasion</p>
+                                     <a class="seven__link" href="/" aria-label="Go to Learn" title="Learn">LEARN ›</a>
+                            </div>
+                          </div> 
+                            
+                                
+
+                          <div class="grid__eight eight">
+                            <div class="eight__content">
+                               <picture >
+                                     <source  srcset="/static/images/grid/grid8-mobile.png 59w, /static/images/grid/grid8-mobile-2x.png 118w" media="(max-width:740px)" sizes="59px">
+
+                                     <source  srcset="/static/images/grid/grid8-tablet.png 59w, /static/images/grid/grid8-tablet-2x.png 118w" media="(max-width:1023px)" sizes="59px">
+
+                                     <img class="six__img" src="/static/images/grid/grid8.png" srcset="/static/images/grid/grid8.png , /static/images/grid/grid8-2x.png 2x" alt="IPHONE">   
+                               </picture>
+                               
+                                     <a class="eight__link" href="/" aria-label="Go to Follow me" title="Follow me">Follow me ></a>
+                            </div>
+                         </div>   
+
+                     
+                         <div class="grid__nine nine">
+                               <picture >
+                                     <source  srcset="/static/images/grid/grid9-mobile-min.png 280w, /static/images/grid/grid9-mobile-min-2x.png 560w" media="(max-width:360px)" sizes="280px">
+
+                                     <source  srcset="/static/images/grid/grid9-mobile.png 375w, /static/images/grid/grid9-mobile-2x.png 750w" media="(max-width:740px)" sizes="375px">
+
+                                     <source  srcset="/static/images/grid/grid9-tablet.png 271w, /static/images/grid/grid9-tablet-2x.png 542w" media="(max-width:1023px)" sizes="271px">
+
+                                     <img class="six__img"src="/static/images/grid/grid9.png" srcset="/static/images/grid/grid9.png , /static/images/grid/grid9-2x.png 2x" alt="IPHONE">   
+                               </picture>
+                                     <span class="nine__title">More than just a display, it’s a vision</span>
+                         </div> 
+
+           </section>
         </main>
        @@include('footer/index.html')
        <script src="menu.js"></script>

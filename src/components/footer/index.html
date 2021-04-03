@@ -2,96 +2,161 @@
     <div class="container">
         <div class="footer__wrapper">
             <div class="footer__navigation">
-                <h4 class="footer__title">Navigation</h4>
+              <h4 class="footer__title">Navigation</h4>
+               
                 <ul class="footer__list">
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="About Us">About Us</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Blog">Blog</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Design Services">Design Services</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Featured On">Featured On</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="2018 Holiday Catalog">2018 Holiday Catalog</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Shop By Designer">Shop By Designer</a></li>
+                   
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to About Us" title="About Us">About Us</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to Blog" title="Blog">Blog</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#"  aria-label="Go to Design Services" title="Design Services">Design Services</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#"  aria-label="Go to Featured On" title="Featured On">Featured On</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#"  aria-label="Go to 2018 Holiday Catalog" title="2018 Holiday Catalog">2018 Holiday Catalog</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#"  aria-label="Go to Shop By Designer" title="Shop By Designer">Shop By Designer</a>
+                    </li>
+                    
                 </ul>
-            </div>
-            <div class="footer__customer">
-                <h4 class="footer__title">Customer Information</h4>
-                <ul class="footer__list">
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Contact Us">Contact Us</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Sale Exclusions">Sale Exclusions</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Shipping & Returns">Shipping & Returns</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Terms & Conditions">Terms & Conditions</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Privacy Policy">Privacy Policy</a></li>
-                    <li class="footer__link"><a class="footer__list-link" href="#" title="Search">Search</a></li>
+           </div>
+           
+           <div class="footer__customer">
+               <h4 class="footer__title">Customer Information</h4>
+                
+                 <ul class="footer__list">
+                   
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to Contact Us" title="Contact Us">Contact Us</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to Sale Exclusions" title="Sale Exclusions">Sale Exclusions</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to Shipping & Returns" title="Shipping & Returns">Shipping & Returns</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to Terms & Conditions" title="Terms & Conditions">Terms & Conditions</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to Privacy Policy" title="Privacy Policy">Privacy Policy</a>
+                    </li>
+                    
+                    <li class="footer__link">
+                      <a class="footer__list-link" href="#" aria-label="Go to Search" title="Search">Search</a>
+                    </li>
+                    
                 </ul>
-            </div>
-            <div class="footer__connect">
-                <h4 class="footer__title">Connect</h4>
+           </div>
+           
+           
+           <div class="footer__connect">
+              <h4 class="footer__title">Connect</h4>
+               
                 <form class="footer__form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="footer__email" id="email-input" type="email" placeholder="Email">
+                    <input class="footer__email" id="email-input" type="email" placeholder="Email">
                     @@include("link/index.html", {
                         "class": "button__link",
                         "title": "JOIN",
                         "title-link": "Join",
-                        "link": "https://echo.htmlacademy.ru"
+                        "link": "https://echo.htmlacademy.ru",
+                        "aria-label": "Go to Join"
                         })
                    
                 </form>
                 
                 <ul class="footer__social ">
 
-                 <li class="footer__social-item">
-                   <a class="footer__social-link footer__social-link--facebook" href="#" title="Go to Facebook">Facebook</a>
-                 </li>
+                    <li class="footer__social-item">
+                       <a class="footer__social-link footer__social-link--facebook" href="https://ru-ru.facebook.com" aria-label="Go to Facebook" title="Facebook">Facebook</a>
+                    </li>
 
-                 <li class="footer__social-item">
-                   <a class="footer__social-link  footer__social-link--twitter" href="#" title="Go to Twitter">Twitter</a>
-                 </li>
+                    <li class="footer__social-item">
+                       <a class="footer__social-link  footer__social-link--twitter" href="https://twitter.com" aria-label="Go to Twitter" title="Twitter">Twitter</a>
+                    </li>
 
-                 <li class="footer__social-item">
-                   <a class="footer__social-link  footer__social-link--pinterest" href="#" title="Go to Pinterest">Pinterest</a>
-                 </li>
+                    <li class="footer__social-item">
+                       <a class="footer__social-link  footer__social-link--pinterest" href="https://www.pinterest.ru" aria-label="Go to Pinterest" title="Pinterest">Pinterest</a>
+                    </li>
 
-                 <li class="footer__social-item">
-                   <a class="footer__social-link  footer__social-link--instagram" href="#" title="Go to Instagram">Instagram</a>
-                 </li>
+                    <li class="footer__social-item">
+                       <a class="footer__social-link  footer__social-link--instagram" href="https://www.instagram.com" aria-label="Go to Instagram" title="Instagram">Instagram</a>
+                    </li>
 
-               </ul>   
-            </div>
-        </div>
-        <div class="footer__border-bottom"></div>
-   <div class="footer__bottom">
-    <div class="footer__bottom-rating">
+                </ul> 
+                  
+           </div>
+           
+      </div>
        
-       <fieldset class="footer__rating">
+        <div class="footer__border-bottom"></div>
+            <div class="footer__bottom">
+                <div class="footer__bottom-rating">
+       
+                  <fieldset class="footer__rating">
+
+                     <div class="footer__rating-grup">
+
+                        <span class="visually__hidden">Company Rating</span>
+
+                        <label class="visually__hidden">Terribly</label>
+                        <input class="footer__rating-star" id="raiting-terribly" type="radio"  name="star" value="1" title="5/1">
+
+                        <label class="visually__hidden">Bad</label>
+                        <input class="footer__rating-star" id="raiting-bad" type="radio" name="star" value="2" title="5/2">
+
+                        <label class="visually__hidden">Normal</label>
+                        <input class="footer__rating-star" id="rating-normal" type="radio"  name="star" value="3" title="5/3">
+
+                        <label class="visually__hidden">Good</label>
+                        <input class="footer__rating-star" id="rating-good" type="radio"  name="star" value="4" title="5/4">
+
+                        <label class="visually__hidden">Excellent</label> 
+                        <input class="footer__rating-star" id="rating-excellent" type="radio"  name="star" value="5" title="5/5">
+
+                        <div class="footer__rating-legend">Company Rating</div>
+
+                     </div>
+
+                </fieldset>
+
+              </div>  
         
-         <div class="footer__rating-grup">
-          
-           <span class="visually__hidden">Company Rating</span>
-         
-            <label class="visually__hidden">Terribly</label>
-            <input class="footer__rating-star" id="raiting-terribly" type="radio"  name="star" value="1" title="5/1">
-            
-            <label class="visually__hidden">Bad</label>
-            <input class="footer__rating-star" id="raiting-bad" type="radio" name="star" value="2" title="5/2">
-            
-            <label class="visually__hidden">Normal</label>
-            <input class="footer__rating-star" id="rating-normal" type="radio"  name="star" value="3" title="5/3">
-           
-            <label class="visually__hidden">Good</label>
-            <input class="footer__rating-star" id="rating-good" type="radio"  name="star" value="4" title="5/4">
-           
-            <label class="visually__hidden">Excellent</label> 
-            <input class="footer__rating-star" id="rating-excellent" type="radio"  name="star" value="5" title="5/5">
-          
-           <div class="footer__rating-legend">Company Rating</div>
-           
-            </div>
-         
-        </fieldset>
-        
-      </div>  
-        
-    <p class="footer__bottom-subtitle">Copyright © 2018 Dlk • Design Life Kids</p>
-   <a class="footer__title-link" href="#" title="Web Design"><p class="footer__title-web">Web Design — Direct Line Development</p></a>
-</div>
-</div>
+                       <p class="footer__bottom-subtitle">Copyright © 2018 Dlk • Design Life Kids</p>
+                       
+                       <a class="footer__title-link" href="#" aria-label="Go to Web Design" title="Web Design">
+                          <p class="footer__title-web">Web Design — Direct Line Development</p>
+                       </a>
+       </div>
+     </div>
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

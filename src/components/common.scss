@@ -13,34 +13,23 @@ body {
     padding-left: 110px;
     padding-right: 110px;
     margin: 0 auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 	
-	
-    
-  @media screen and (max-width: 1250px) {
-    padding: 0 60px;
-        
-  }
-    
   @media screen and (max-width: $md) {
-    
     padding: 0 60px;
   }
 
   @media screen and (max-width: $sm) {
-   
     padding: 0 ;
   }
 
-   @media screen and (max-width: $xs) {
-   
-    padding: 0 ;
+  @media screen and (max-width: $xs) {
+     padding: 0 ;
   }
 
 }
 
-.link-nav {
+ .link-nav {
     font-size: 14px;
     line-height: 19px;
     font-weight: normal;
@@ -50,13 +39,14 @@ body {
     text-decoration: none;
     transition: opacity .5s ease .2s;
 }
-.link-nav:hover{
+
+ .link-nav:hover{
     opacity: 0.5;
-}
-.link-nav:active{
+ }
+ .link-nav:active{
     opacity: 0.2;
-}
-.link {
+ }
+ .link {
     font-family: 'Crimson Text', serif;
     font-style: italic;
     font-weight: normal;
@@ -64,7 +54,7 @@ body {
     line-height: 25px;
     text-decoration: none;
     color: #1E0606;
-@media screen and (max-width: $sm) {
+ @media screen and (max-width: $sm) {
         font-size: 16px;
         line-height: 20px;
         padding-left: 20px;
@@ -80,8 +70,7 @@ body {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }

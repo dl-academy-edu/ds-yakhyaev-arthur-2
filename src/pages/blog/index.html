@@ -5,174 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico" />
-    <meta name="description" content="Blog" />
+    <link href="/common.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="description" content="Blog"/>
     <title>Blog</title>
   </head>
   
   <body>
     @@include('header/index.html')
-    <main class="main">
-    <section class="blog ">
-       
-        <div class="container">
-           
-            <h1 class="navigation__title">Blog</h1>
-               
-                <div class="navigation__select"> 
-                    <a class="link" href="/" title="Go to Home">Home</a> 
-                    <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
-                    <a class="navigation__way-link" href="#">Blog</a>
-                 </div>
-            
-            <div class="blog__wrapper">
-                
-                @@include("blog-card/index.html", {
-                "date": "23rd August 2018",
-                "title": "Top 5 fastest growing it service companies in philly",
-                "text": "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.",
-                "img": "blog1.jpg",
-                "img2x": "blog1-2x.jpg",
-                "imgTablet": "blog1-tablet.jpg",
-                "imgTablet2x": "blog1-tablet-2x.jpg", 
-                "imgMobile": "blog1-mobile.jpg",
-                "imgMobile2x": "blog1-mobile-2x.jpg",
-                "imgMobile-min": "blog1-mobile-min.jpg",
-                "imgMobile-min-2x": "blog1-mobile-min-2x.jpg",
-                "alt": "Top 5",
-                "link": "#",
-                "cotent":"Top 5 fastest growing it service companies in philly"
-                })
-                
-                
-                @@include("blog-card/index.html", {
-                "date": "23rd August 2018",
-                "title": "Best financial",
-                "text": "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.",
-                "img": "blog2.jpg",
-                "img2x": "blog2-2x.jpg",
-                "imgTablet": "blog2-tablet.jpg",
-                "imgTablet2x": "blog2-tablet-2x.jpg", 
-                "imgMobile": "blog2-mobile.jpg",
-                "imgMobile2x": "blog2-mobile-2x.jpg",
-                "imgMobile-min": "blog2-mobile-min.jpg",
-                "imgMobile-min-2x": "blog2-mobile-min-2x.jpg",
-                "alt": "Direct Line",
-                "link": "#",
-                "cotent":"Best financial"
-                })
-                
-                @@include("blog-card/index.html", {
-                "date": "23rd August 2018",
-                "title": "Company logo or brand identity: which one is more important? brand identity",
-                "text": "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.",
-                "img": "blog3.jpg",
-                "img2x": "blog3-2x.jpg",
-                "imgTablet": "blog3-tablet.jpg",
-                "imgTablet2x": "blog3-tablet-2x.jpg", 
-                "imgMobile": "blog3-mobile.jpg",
-                "imgMobile2x": "blog3-mobile-2x.jpg",
-                "imgMobile-min": "blog3-mobile-min.jpg",
-                "imgMobile-min-2x": "blog3-mobile-min-2x.jpg",
-                "alt": "Company logo",
-                "link": "#",
-                "cotent":"Company logo or brand identity: which one is more important? brand identity"
-                })
-                
-                
-                @@include("blog-card/index.html", {
-                "date": "23rd August 2018",
-                "title": "Best financial",
-                "text": "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.",
-                "img": "blog4.jpg",
-                "img2x": "blog4-2x.jpg",
-                "imgTablet": "blog4-tablet.jpg",
-                "imgTablet2x": "blog4-tablet-2x.jpg", 
-                "imgMobile": "blog4-mobile.jpg",
-                "imgMobile2x": "blog4-mobile-2x.jpg",
-                "imgMobile-min": "blog4-mobile-min.jpg",
-                "imgMobile-min-2x": "blog4-mobile-min-2x.jpg",
-                "alt": "Direct Line",
-                "link": "#",
-                "cotent":"Best financial"
-                })
-                
-                @@include("blog-card/index.html", {
-                "date": "23rd August 2018",
-                "title": "Company logo or brand identity: which one is more important? brand identity",
-                "text": "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.",
-                "img": "blog5.jpg",
-                "img2x": "blog5-2x.jpg",
-                "imgTablet": "blog5-tablet.jpg",
-                "imgTablet2x": "blog5-tablet-2x.jpg", 
-                "imgMobile": "blog5-mobile.jpg",
-                "imgMobile2x": "blog5-mobile-2x.jpg",
-                "imgMobile-min": "blog5-mobile-min.jpg",
-                "imgMobile-min-2x": "blog5-mobile-min-2x.jpg",
-                "alt": "Company logo",
-                "link": "#",
-                "cotent":"Company logo or brand identity: which one is more important? brand identity"
-                })
-                
-                @@include("blog-card/index.html", {
-                "date": "23rd August 2018",
-                "title": "Top 5 fastest growing it service companies in philly",
-                "text": "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.",
-                "img": "blog6.jpg",
-                "img2x": "blog6-2x.jpg",
-                "imgTablet": "blog6-tablet.jpg",
-                "imgTablet2x": "blog6-tablet-2x.jpg", 
-                "imgMobile": "blog6-mobile.jpg",
-                "imgMobile2x": "blog6-mobile-2x.jpg",
-                "imgMobile-min": "blog6-mobile-min.jpg",
-                "imgMobile-min-2x": "blog6-mobile-min-2x.jpg",
-                "alt": "Direct Line",
-                "link": "#",
-                "cotent":"Top 5 fastest growing it service companies in philly"
-                })
-                
-        </div>
-             
-        <div class="blog__select">
-             
-            <button class="blog__select-btn blog__select-btn--first" title="Go to left">
-                <svg class="blog__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
-                <path class="blog__select-path" d="M 16 2 L 3 15 L 16 28" stroke="#E4E1E1" stroke-width="4"/>
-                </svg>
-                </button> 
-               
-                <ul class="blog__inner">
-                  
-                   <li class="blog__inner-item">
-                     <button class="blog__inner-number blog__inner-number--one" type="button"  tabindex="1" aria-label="Go to 1 page" title="1 page">1</button>
-                     </li>
-                     
-                  <li class="blog__inner-item">
-                    <button class="blog__inner-number " type="button"  aria-label="Go to 1 page" title="1 page">2</button>
-                    </li>
-                    
-                  <li class="blog__inner-item">
-                     <button class="blog__inner-number " type="button"   aria-label="Go to 1 page" title="1 page">3</button>
-                     </li>
-                     
-                  <li class="blog__inner-item">
-                      <button class="blog__inner-number " type="button"  aria-label="Go to 1 page" title="1 page">4</button>
-                      </li>
-                      
-                 </ul>
-                
-            <button class="blog__select-btn blog__select-btn--second" title="Go to Right">
-               <svg class="blog__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
-                <path class="blog__select-path" d="M 2 2 L 15 15 L 2 28" stroke="#E4E1E1" stroke-width="4"/>
-               </svg>
-            </button> 
-            
-        </div>
-    </div>
-</section>
-    </main>
+    
+          <main class="main">
+               <section class="blog ">
+                 <div class="container">
+                   
+                    <h1 class="navigation__title">Blog</h1>
+                          <div class="navigation__select"> 
+                            <a class="link" href="/" aria-label="Go to Home" title="Home">Home</a> 
+                            <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
+                            <a class="navigation__way-link" title="Blog" href="#">Blog</a>
+                          </div>
+
+                 <div class="blog__wrapper">
+
+                            @@include("blog-card/index.html",{
+                            "date": "23rd August 2018",
+                            "title": "Top 5 fastest growing it service companies in philly",
+                            "text": "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.",
+                            "img": "blog1.jpg",
+                            "img2x": "blog1-2x.jpg",
+                            "imgTablet": "blog1-tablet.jpg",
+                            "imgTablet2x": "blog1-tablet-2x.jpg", 
+                            "imgMobile": "blog1-mobile.jpg",
+                            "imgMobile2x": "blog1-mobile-2x.jpg",
+                            "imgMobile-min": "blog1-mobile-min.jpg",
+                            "imgMobile-min-2x": "blog1-mobile-min-2x.jpg",
+                            "alt": "Top 5",
+                            "link": "#"
+                            })
+
+
+                            @@include("blog-card/index.html",{
+                            "date": "23rd August 2018",
+                            "title": "Best financial",
+                            "text": "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.",
+                            "img": "blog2.jpg",
+                            "img2x": "blog2-2x.jpg",
+                            "imgTablet": "blog2-tablet.jpg",
+                            "imgTablet2x": "blog2-tablet-2x.jpg", 
+                            "imgMobile": "blog2-mobile.jpg",
+                            "imgMobile2x": "blog2-mobile-2x.jpg",
+                            "imgMobile-min": "blog2-mobile-min.jpg",
+                            "imgMobile-min-2x": "blog2-mobile-min-2x.jpg",
+                            "alt": "Direct Line",
+                            "link": "#"
+                            })
+
+                            @@include("blog-card/index.html",{
+                            "date": "23rd August 2018",
+                            "title": "Company logo or brand identity: which one is more important? brand identity",
+                            "text": "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.",
+                            "img": "blog3.jpg",
+                            "img2x": "blog3-2x.jpg",
+                            "imgTablet": "blog3-tablet.jpg",
+                            "imgTablet2x": "blog3-tablet-2x.jpg", 
+                            "imgMobile": "blog3-mobile.jpg",
+                            "imgMobile2x": "blog3-mobile-2x.jpg",
+                            "imgMobile-min": "blog3-mobile-min.jpg",
+                            "imgMobile-min-2x": "blog3-mobile-min-2x.jpg",
+                            "alt": "Company logo",
+                            "link": "#"
+                            })
+
+
+                            @@include("blog-card/index.html", {
+                            "date": "23rd August 2018",
+                            "title": "Best financial",
+                            "text": "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.",
+                            "img": "blog4.jpg",
+                            "img2x": "blog4-2x.jpg",
+                            "imgTablet": "blog4-tablet.jpg",
+                            "imgTablet2x": "blog4-tablet-2x.jpg", 
+                            "imgMobile": "blog4-mobile.jpg",
+                            "imgMobile2x": "blog4-mobile-2x.jpg",
+                            "imgMobile-min": "blog4-mobile-min.jpg",
+                            "imgMobile-min-2x": "blog4-mobile-min-2x.jpg",
+                            "alt": "Direct Line",
+                            "link": "#"
+                            })
+
+                            @@include("blog-card/index.html",{
+                            "date": "23rd August 2018",
+                            "title": "Company logo or brand identity: which one is more important? brand identity",
+                            "text": "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.",
+                            "img": "blog5.jpg",
+                            "img2x": "blog5-2x.jpg",
+                            "imgTablet": "blog5-tablet.jpg",
+                            "imgTablet2x": "blog5-tablet-2x.jpg", 
+                            "imgMobile": "blog5-mobile.jpg",
+                            "imgMobile2x": "blog5-mobile-2x.jpg",
+                            "imgMobile-min": "blog5-mobile-min.jpg",
+                            "imgMobile-min-2x": "blog5-mobile-min-2x.jpg",
+                            "alt": "Company logo",
+                            "link": "#"
+                            })
+
+                            @@include("blog-card/index.html",{
+                            "date": "23rd August 2018",
+                            "title": "Top 5 fastest growing it service companies in philly",
+                            "text": "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.",
+                            "img": "blog6.jpg",
+                            "img2x": "blog6-2x.jpg",
+                            "imgTablet": "blog6-tablet.jpg",
+                            "imgTablet2x": "blog6-tablet-2x.jpg", 
+                            "imgMobile": "blog6-mobile.jpg",
+                            "imgMobile2x": "blog6-mobile-2x.jpg",
+                            "imgMobile-min": "blog6-mobile-min.jpg",
+                            "imgMobile-min-2x": "blog6-mobile-min-2x.jpg",
+                            "alt": "Direct Line",
+                            "link": "#"
+                            })
+
+                    </div>
+
+                    <div class="blog__select">
+
+                                  <button class="blog__select-btn blog__select-btn--first" aria-label="Go to left" title="left">
+                                     <svg class="blog__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
+                                     <path class="blog__select-path" d="M 16 2 L 3 15 L 16 28" stroke="#E4E1E1" stroke-width="4"/>
+                                     </svg>
+                                  </button> 
+
+                            <ul class="blog__inner">
+                                 
+                                  <li class="blog__inner-item">
+                                     <button class="blog__inner-number blog__inner-number--one" type="button"  tabindex="1" aria-label="Go to 1 page" title="1 page">1</button>
+                                  </li>
+
+                                  <li class="blog__inner-item">
+                                     <button class="blog__inner-number" type="button"  aria-label="Go to 1 page" title="1 page">2</button>
+                                  </li>
+
+                                  <li class="blog__inner-item">
+                                     <button class="blog__inner-number" type="button"   aria-label="Go to 1 page" title="1 page">3</button>
+                                  </li>
+
+                                  <li class="blog__inner-item">
+                                     <button class="blog__inner-number" type="button"  aria-label="Go to 1 page" title="1 page">4</button>
+                                  </li>
+
+                             </ul>
+
+                                 <button class="blog__select-btn blog__select-btn--second" aria-label="Go to Right" title="Go to Right">
+                                    <svg class="blog__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
+                                    <path class="blog__select-path" d="M 2 2 L 15 15 L 2 28" stroke="#E4E1E1" stroke-width="4"/>
+                                    </svg>
+                                 </button> 
+
+                    </div>
+               </div>
+            </section>
+        </main>
     @@include('footer/index.html')
     <script src="index.js"></script>
   </body>

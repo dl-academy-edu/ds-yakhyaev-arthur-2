@@ -19,8 +19,6 @@
     
         
     &__wrapper{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         overflow: auto;
     }
@@ -56,21 +54,13 @@
   }
         
     &__nav{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         flex: auto;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: space-between;
+        align-items: center;
        
         
     &-list{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         list-style: none;
         margin-top: 8px;
@@ -138,14 +128,7 @@
     }
 }
   
-//&__contact{
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     align-self: center;
-//     margin-right: 3px;
-       
-        
+
         
  &__search {
     
@@ -211,7 +194,7 @@
      opacity: 0.2;
      }
   }      
-// }
+
         
  &__mobile {
      position: absolute;

@@ -14,123 +14,124 @@
   
   <body>
     @@include('header/index.html')
+    
     <main class="main">
-      
-       <section class="toys">
-   
-        <div class="container">
+         <section class="toys">
+                <div class="container">
            
-            <h1 class="navigation__title">Toy for kids</h1>
-               
-                <div class="navigation__select"> 
-                   <a class="link" href="/" title="Go to Home">Home</a> 
-                       <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
-                         <a class="link" href="/pages/catalog" title="Go to Catalog">Catalog</a> 
-                           <img class="navigation__arrow" src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12"> 
-                             <a class="navigation__way-link" href="#">Toys</a>
-                 </div>
-         </div>
+                      <h1 class="navigation__title">Toy for kids</h1>
+                           <div class="navigation__select"> 
+                                <a class="link" href="/" aria-label="Go to Home" title="Home">Home</a> 
+                                <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
+                                <a class="link" href="/pages/catalog" aria-label="Go to Catalog"  title="Catalog">Catalog</a> 
+                                <img class="navigation__arrow" src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12"> 
+                                <a class="navigation__way-link" href="#" title="Toys">Toys</a>
+                           </div>
+                </div>
           
-           <div class="toys__wrapper">
-               <form class="toys__form" action="#" method="post">
+                <div class="toys__wrapper">
+                      <form class="toys__form" action="#" method="post">
                   
                       
-                       <fieldset class="toys__field toys__field--one">
-                          <legend class="toys__title-legend" title="Cost">Cost</legend>
+                           <fieldset class="toys__field toys__field--one">
+                               <legend class="toys__title-legend" title="Cost">Cost</legend>
                               
-                               <div class="toys__item">
+                                  <div class="toys__item">
                                     <div class="toys__border"></div>
                                     <div class="toys__img"></div>
                                     <div class="toys__border--two"></div>
-                               </div>
+                                  </div>
                                  
-                                <div class="toys__numerals">
+                                  <div class="toys__numerals">
                                       <span class="toys__numer-min">0</span>
                                       <span class="toys__numer-max">500</span>
-                                </div>
+                                  </div>
                                 
-                            </fieldset>
+                           </fieldset>
 
-                                <fieldset class="toys__field toys__field--two">
-                                    <legend class="toys__title-legend">Color</legend>
+                           <fieldset class="toys__field toys__field--two">
+                               <legend class="toys__title-legend">Color</legend>
+                                 
+                                  <ul class="toys__color">
 
-                                        <ul class="toys__color">
+                                       <li class="toys__items">
+                                          <input class="toys__input" type="Checkbox" id="black" value="black" name="color_1" aria-label="Enter on Black" title="Black" checked>
+                                          <label class="toys__label toys__label--color" for="black" >Black</label>
+                                       </li>
 
-                                            <li class="toys__items">
-                                                  <input class="toys__input" type="Checkbox" id="black" value="black" name="color_1"  checked>
-                                                  <label class="toys__label toys__label--color" for="black" title="Black">Black</label>
-                                                </li>
+                                       <li class="toys__items">
+                                          <input class="toys__input" type="Checkbox" id="blue" value="blue" name="color_2" aria-label="Enter on Blue" title="Blue">
+                                          <label class="toys__label toys__label--color" for="blue" >Blue</label>
+                                       </li>
 
-                                            <li class="toys__items">
-                                                    <input class="toys__input" type="Checkbox" id="blue" value="blue" name="color_2" >
-                                                    <label class="toys__label toys__label--color" for="blue" title="Blue">Blue</label>
-                                                </li>
+                                       <li class="toys__items">
+                                          <input class="toys__input" type="Checkbox" id="green" value="green" name="color_3" aria-label="Enter on Green" title="Green">
+                                          <label class="toys__label toys__label--color" for="green" >Green</label>
+                                       </li>
 
-                                            <li class="toys__items">
-                                                    <input class="toys__input" type="Checkbox" id="green" value="green" name="color_3" >
-                                                    <label class="toys__label toys__label--color" for="green" title="Green">Green</label>
-                                                </li>
+                                       <li class="toys__items">
+                                          <input class="toys__input" type="Checkbox" id="white" value="white" name="color_4" aria-label="Enter on White" title="White">   
+                                          <label class="toys__label toys__label--color" for="white" >White</label>
+                                       </li>
 
-                                            <li class="toys__items">
-                                                    <input class="toys__input" type="Checkbox" id="white" value="white" name="color_4" >   
-                                                    <label class="toys__label toys__label--color" for="white" title="Green">White</label>
-                                                </li>
-
-                                        </ul>
-                                </fieldset>
+                                 </ul>
+                           </fieldset>
                                 
-                                <fieldset class="toys__field toys__field--three"> 
-                                     <legend class="toys__title-legend">Delivery</legend>
+                           <fieldset class="toys__field toys__field--three"> 
+                                 <legend class="toys__title-legend">Delivery</legend>
 
                                     <ul class="toys__delivery">
 
-                                        <li class="toys__delivery-items">
-                                            <input class="toys__input toys__input--hidden " type="radio" id="Free-shipping" value="Free-shipping" name="shipping">
-                                            <label class="toys__label toys__label--delivery" for="Free-shipping" title="Free-shipping">Free shipping</label>
-                                        </li>
+                                       <li class="toys__delivery-items">
+                                          <input class="toys__input toys__input--hidden " type="radio" id="Free-shipping" value="Free-shipping" name="shipping" aria-label="Enter on Free-shipping " title="Free-shipping">
+                                          <label class="toys__label toys__label--delivery" for="Free-shipping" >Free shipping</label>
+                                       </li>
 
-                                        <li class="toys__delivery-items">
-                                            <input class="toys__input toys__input--hidden " type="radio" id="Fast-shipping" value="Fast-shipping" name="shipping" checked>
-                                            <label class=" toys__label toys__label--delivery" for="Fast-shipping" title="Fast-shipping">Fast shipping</label>
-                                        </li>
+                                       <li class="toys__delivery-items">
+                                          <input class="toys__input toys__input--hidden " type="radio" id="Fast-shipping" value="Fast-shipping" name="shipping" aria-label="Enter on Fast-shipping" title="Fast-shipping" checked>
+                                          <label class=" toys__label toys__label--delivery" for="Fast-shipping">Fast shipping</label>
+                                       </li>
                                         
                                     </ul>
-                                </fieldset>
+                           </fieldset>
 
-                                <fieldset class="toys__field toys__field--four">
+                           <fieldset class="toys__field toys__field--four">
                                     <legend class="toys__title-legend">Amount</legend>
+                                       
                                         <ul class="toys__amount">
                                         
                                             <li class="toys__amount-items">
-                                                <input class="toys__input toys__input--amount" type="radio" id="radio_1" value="0-5" name="numer"  checked>
-                                                <label class="toys__label toys__label--amount" for="radio_1" title="accept 0-5">0-5</label>
+                                                <input class="toys__input toys__input--amount" type="radio" id="radio_1" value="0-5" name="numer" aria-label="Enter on 0-5" title="0-5"  checked>
+                                                <label class="toys__label toys__label--amount" for="radio_1">0-5</label>
                                             </li>
                                                
                                             <li class="toys__amount-items">
-                                                <input class="toys__input toys__input--amount" type="radio" id="radio_2" value="10-20" name="numer">
-                                                <label class="toys__label toys__label--amount" for="radio_2" title="accept 10-20">10-20</label>
+                                                <input class="toys__input toys__input--amount" type="radio" id="radio_2" value="10-20" name="numer" aria-label="Enter on 10-20" title="10-20">
+                                                <label class="toys__label toys__label--amount" for="radio_2">10-20</label>
                                             </li>
                                              
                                             <li class="toys__amount-items">
-                                               <input class="toys__input toys__input--amount" type="radio" id="radio_3" value="20-50" name="numer">
-                                             <label class="toys__label toys__label--amount" for="radio_3" title="accept 20-50">20-50</label>
+                                                <input class="toys__input toys__input--amount" type="radio" id="radio_3" value="20-50" name="numer" aria-label="Enter on 20-50" title="20-50">
+                                                <label class="toys__label toys__label--amount" for="radio_3">20-50</label>
                                             </li> 
                                             
-                                         </ul>
-                                 </fieldset>
-                  
-                   <div class="toys__form-btn">
-                      <button class="toys__button" type="submit" title="To accept">Apply</button>
-                    </div>
+                                       </ul>
+                          </fieldset>
+
+                                
+                         <div class="toys__form-btn">
+                            <button class="toys__button" type="submit"aria-label="Go to Apply" title="To accept">Apply</button>
+                         </div>
                 
                
-            </form>
-           </div>
+                 </form>
+             </div>
            
 
-            <div class="toys__catalog">
+        <div class="toys__catalog">
                
                 <ul class="toys__list">
+                
                  <li class="toys__card-item">
                   @@include("toys-card/index.html", {
                     "more": " Learn more",
@@ -165,7 +166,7 @@
                     "alt": "Brass",
                     "link": "#"
                     })
-                    </li>
+                  </li>
 
                   <li class="toys__card-item">
                    @@include("toys-card/index.html", {
@@ -183,7 +184,7 @@
                     "alt": "Cibo",
                     "link": "#"
                     })
-                    </li>
+                  </li>
 
                  <li class="toys__card-item">
                   @@include("toys-card/index.html", {
@@ -201,7 +202,7 @@
                     "alt": "Gatcha",
                     "link": "#"
                     })
-                    </li>
+                 </li>
 
 
                 <li class="toys__card-item">
@@ -220,7 +221,7 @@
                     "alt": "Christmas",
                     "link": "#"
                     })
-                    </li>
+                 </li>
                     
                <li class="toys__card-item">
                  @@include("toys-card/index.html", {
@@ -238,53 +239,52 @@
                     "alt": "Tangle",
                     "link": "#"
                     })
-                   </li>
+                </li>
                  
                     
-                </ul> 
+            </ul> 
                 
-                <div class="toys__select">
+        <div class="toys__select">
 
-             
-            <button class="toys__select-btn toys__select-btn--first" title="Go to left">
-                <svg class="toys__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
-                <path class="toys__select-path" d="M 16 2 L 3 15 L 16 28" stroke="#E4E1E1" stroke-width="4"/>
-                </svg>
-                </button> 
+                  <button class="toys__select-btn toys__select-btn--first" title="Go to left">
+                     <svg class="toys__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
+                     <path class="toys__select-path" d="M 16 2 L 3 15 L 16 28" stroke="#E4E1E1" stroke-width="4"/>
+                     </svg>
+                  </button> 
                
-                <ul class="toys__inner">
+              <ul class="toys__inner">
                   
-                   <li class="toys__inner-item">
+                  <li class="toys__inner-item">
                      <button class="toys__inner-number toys__inner-number--one" type="button"  tabindex="1" aria-label="Go to 1 page" title="1 page">1</button>
-                     </li>
+                  </li>
                      
                   <li class="toys__inner-item">
-                    <button class="toys__inner-number " type="button"  aria-label="Go to 1 page" title="1 page">2</button>
-                    </li>
+                     <button class="toys__inner-number " type="button"  aria-label="Go to 1 page" title="1 page">2</button>
+                  </li>
                     
                   <li class="toys__inner-item">
                      <button class="toys__inner-number " type="button"   aria-label="Go to 1 page" title="1 page">3</button>
-                     </li>
+                  </li>
                      
                   <li class="toys__inner-item">
-                      <button class="toys__inner-number " type="button"  aria-label="Go to 1 page" title="1 page">4</button>
-                      </li>
+                     <button class="toys__inner-number " type="button"  aria-label="Go to 1 page" title="1 page">4</button>
+                  </li>
                       
-                 </ul>
+              </ul>
                 
-            <button class="toys__select-btn toys__select-btn--second" title="Go to Right">
-               <svg class="toys__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
-                <path class="toys__select-path" d="M 2 2 L 15 15 L 2 28" stroke="#E4E1E1" stroke-width="4"/>
-               </svg>
-            </button> 
+                 <button class="toys__select-btn toys__select-btn--second" title="Go to Right">
+                    <svg class="toys__select-svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
+                    <path class="toys__select-path" d="M 2 2 L 15 15 L 2 28" stroke="#E4E1E1" stroke-width="4"/>
+                    </svg>
+                 </button> 
             
         </div>
                 
         
-            </div>
+     </div>
       
-    </section>
-    </main>
+   </section>
+</main>
     @@include('footer/index.html')
     <script src="index.js"></script>
   </body>
