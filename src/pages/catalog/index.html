@@ -14,20 +14,19 @@
   
   <body>
 @@include('header/index.html')
+   
     <main class="main">
         <section class="catalog">
-           
-            <div class="container">
+           <div class="container">
                
                 <h1 class="navigation__title">Category Products</h1>
-                
-                  <div class="navigation__select"> 
-                       <a class="link" href="/" title="Go to Home">Home</a>
+                     <div class="navigation__select"> 
+                        <a class="link" href="/" aria-label="Go to Home" title="Home">Home</a>
                         <img class="navigation__arrow " src="/static/images/Vector%20(right).png" alt="Vector" width="8" height="12">
-                         <a class="navigation__way-link" href="#">Catalog</a> 
+                        <a class="navigation__way-link" href="#" title="Catalog">Catalog</a> 
                      </div>
                      
-                    <div class="catalog__list">
+                <div class="catalog__list">
                     
                      
                      @@include("catalog-card/index.html",{
@@ -39,7 +38,8 @@
                         "imgTablet2x":"catalog1-tablet-x2.png",
                         "imgMobile":"catalog1-mobile.png",
                         "imgMobile2x":"catalog1-mobile-x2.png",
-                        "alt": "APPAREL KIDS"
+                        "alt": "APPAREL KIDS",
+                        "aria-label": "Go to Apparel kids"
                        })
                        
                        
@@ -53,7 +53,8 @@
                         "imgTablet2x":"catalog2-tablet-x2.png",
                         "imgMobile":"catalog2-mobile.png",
                         "imgMobile2x":"catalog2-mobile-x2.png",
-                        "alt": "HOLIDAY SHOP"
+                        "alt": "HOLIDAY SHOP",
+                         "aria-label": "Go to Holiday shop"
                        })
                       
                        
@@ -67,7 +68,8 @@
                         "imgTablet2x":"catalog3-tablet-x2.png",
                         "imgMobile":"catalog3-mobile.png",
                         "imgMobile2x":"catalog3-mobile-x2.png",
-                        "alt": "TOYS"
+                        "alt": "TOYS",
+                         "aria-label": "Go to Toys"
                        })
                        
                        
@@ -80,7 +82,8 @@
                         "imgTablet2x":"catalog4-tablet-x2.png",
                         "imgMobile":"catalog4-mobile.png",
                         "imgMobile2x":"catalog4-mobile-x2.png",
-                        "alt": "ACCESSORIES"
+                        "alt": "ACCESSORIES",
+                        "aria-label": "Go to Accessories"
                        }) 
                      
                        
@@ -94,7 +97,8 @@
                         "imgTablet2x":"catalog5-tablet-x2.png",
                         "imgMobile":"catalog5-mobile.png",
                         "imgMobile2x":"catalog5-mobile-x2.png",
-                        "alt": "SALE"
+                        "alt": "SALE",
+                        "aria-label": "Go to Sale"
                        })
                       
                      
@@ -107,13 +111,15 @@
                         "imgTablet2x":"catalog6-tablet-x2.png",
                         "imgMobile":"catalog6-mobile.png",
                         "imgMobile2x":"catalog6-mobile-x2.png",
-                        "alt": "APPAREL ADULTS"
+                        "alt": "APPAREL ADULTS",
+                        "aria-label": "Go to Apparel adults"
                        }) 
                                      
                 </div>
+                
                 <div class="catalog__descript">
-                   
-                    <h2 class="catalog__title-two">Product Description</h2>
+                       
+                   <h2 class="catalog__title-two">Product Description</h2>
                     
                         <p class="catalog__subtext"> Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
 
@@ -122,10 +128,11 @@
                         <p class="catalog__subtext"> The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress. </p>
                     
                 </div>
+                
             </div>
         </section>
     </main>
     @@include('footer/index.html')
-    <script src="menu.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

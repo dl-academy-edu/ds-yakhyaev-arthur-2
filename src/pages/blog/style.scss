@@ -17,9 +17,7 @@
     @media screen and (max-width: $sm) {
         padding: 0 20px;
     }
-          @media screen and (max-width: 280px) {
-        padding: 0 ;
-    }
+      
          
     }
         
@@ -27,20 +25,16 @@
      &__select {
         position: relative;
         left:-6px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        justify-content: space-between;
         transition: opacity .1s ease-in .1s;
         margin-bottom: -12px;
          
-  @media screen and (max-width: $sm) {
+   @media screen and (max-width: $sm) {
         padding: 0 20px;
          }
    @media screen and (max-width: 300px) {
-       padding: 0 ;
+       padding: 0;
          }
          
          
@@ -57,14 +51,14 @@
 		
      &:focus{
         outline: 1px solid #C29974;
-    }
+    }                       
         
-        &--first{
-            padding: 0;
+    &--first{
+        padding: 0;
          }
         
-        &--second{
-            padding: 0;
+    &--second{
+        padding: 0;
          }  
    
 
@@ -80,16 +74,16 @@
    
 }      
          
-      &-svg{
-          fill: none;
+    &-svg{
+        fill: none;
         }
           
-       &-path{
-          stroke: #C29974;
-          stroke-width: 4px;
+    &-path{
+        stroke: #C29974;
+        stroke-width: 4px;
         }         
          
-@media screen and (max-width: $sm) {
+ @media screen and (max-width: $sm) {
         &-svg{
         fill: none;
          }
@@ -97,8 +91,6 @@
         
 }
     &__inner {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         list-style: none;
         margin-top: 6px;

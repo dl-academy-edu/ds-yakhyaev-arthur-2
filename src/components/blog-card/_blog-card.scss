@@ -3,123 +3,101 @@
 
    .blog__card {
         width: 380px;
-        margin-left: 20px;
-	   
-	   
-	   @media screen and (max-width: 1397px) {
-        margin-left: 14px;
-      }
-       
-    @media screen and (max-width: 1380px) {
-		 width: 314px;
-         margin: 0;
-         margin-right: 20px;
-       }
-	    @media screen and (max-width: 1121px) {
-		 width: 280px;
-         margin: 0;
-         margin-right: 20px;
-       }
-       
-    @media screen and (max-width: $md) {
-         
-        margin: 0;
-	&:nth-child(2){
-         margin-right: 14px;
-       } 
-     
-    &:nth-child(3){
-         margin-right: 14px;
-       }
-		&:nth-child(4){
-         margin-right: 14px;
-       } 
-   
-    &:nth-child(5){
-       margin-right: 14px;
-       } 
- }
-    @media screen and (max-width: 900px) {
-        flex: auto;
-        
-      }
-    @media screen and (max-width: 414px) {
-        width: 311px;
-           margin-left: 20px;
-        
-      }
-    @media screen and (max-width: 390px) {
-        
-           margin-left: 0;
-        
-      }
-       
-    @media screen and (max-width: $xs) {
-        width: 335px;
-      }
-       
-        
-    &:first-child{
-        margin:0;
-		
-        
-    @media screen and (max-width: 1380px) {
-        margin-right: 20px;
-      }
-        
-    @media screen and (max-width: $md) {
-        margin-right: 20px;
-      }
-    @media screen and (max-width: 414px) {
-        margin-left: 20px;
-      }
-     @media screen and (max-width: 390px) {
-        margin-left: 0;
-      }
-//   
-       
-    }
-       
-       
-    &:nth-child(4){
-       margin-left: 0;
-       } 
-     
-    
-   .blog__card-link{
-        display: block;
-        height: 100%;
         color: #000;
         text-decoration: none;
+        margin-right: 20px;
+       
+       &:nth-child(3){
+         margin-right: 0px;
+       } 
+       
+       &:nth-child(6){
+         margin-right: 0px;
+       } 
+       
+     @media screen and (max-width: 1400px) {
+		 width: 352px;
+         flex: auto;
+         
+         
+        &:nth-child(1){
+         margin-right: 20px;
+       } 
+        &:nth-child(2){
+         margin-right: 20px;
+       } 
+        &:nth-child(3){
+         margin-right: 20px;
+       } 
+       
+        &:nth-child(4){
+         margin-right: 20px;
+       }
+        &:nth-child(5){
+         margin-right: 20px;
+       }
+        
+       }
+       
+       @media screen and (max-width: 1121px) {
+		   width: 300px;
+           margin: 0;
+
+       &:nth-child(2){
+          margin-right: 20px;
+       } 
+      
+       &:nth-child(3){
+          margin-right: 20px;
+       }
+		&:nth-child(4){
+          margin-right: 20px;
+       } 
+   
+       &:nth-child(5){
+          margin-right: 20px;
+       } 
+        
+       }
+       
+        @media screen and (max-width: $md) {
+           margin: 0;
+           flex: auto;
+	
+        &:nth-child(2){
+          margin-right: 0;
+        } 
+        &:nth-child(3){
+          margin-right: 20px;
         }
-               
-     .blog__card-img{
-        width: 380px;
-         
-    @media screen and (max-width: $md) {
-        width: 314px;
-        height: 182px;
+		&:nth-child(4){
+          margin-right: 0;
+        } 
+   
+        &:nth-child(5){
+          margin-right: 20px;
+        } 
+ }
+       
+        @media screen and (max-width: 414px) {
+             width: 100%;
         }
+
+
+     &-img{
+         width: 100%;
+         margin-bottom: 10px;
          
-    @media screen and (max-width: 767px) {
-        width: 300px;
-        height: 172px;  
-      }
-         
-    @media screen and (max-width: $xs) {
-        margin-bottom: 15px;
+      @media screen and (max-width: $xs) {
+         margin-bottom: 15px;
         }
       }
         
-        
-    
-               
-    .blog__card-date {
-        margin-bottom: 7px;
+     &-date {
         color: #818181;
-    }
+      }
                
-    .blog__card-title {
+    &-title {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -141,15 +119,13 @@
       }
         
     &:hover{
-        -webkit-text-decoration-line: underline;
-                text-decoration-line: underline;
+        text-decoration-line: underline;
     }
     &:active{
-        -webkit-text-decoration-line: underline;
-                text-decoration-line: underline;
+        text-decoration-line: underline;
     }
 }    
-    .blog__card-text {
+    &-text {
         font-weight: normal;
         font-size: 18px;
         line-height: 25px;
